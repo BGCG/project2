@@ -5,6 +5,15 @@ body {
     font-family: Sen, sans-serif;
 }
 
+button {
+    background-color: peachpuff;
+    border: 0;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
 #logo-container {
     margin: 0 auto;
     text-align: center;
@@ -16,7 +25,12 @@ body {
 
 #hammer-emoji {
     margin: 50px;
-    font-size: 50px;
+    font-size: 500px;
+}
+
+.emoji {
+    font-size: 100px;
+    color: #3a3a3a;
 }
  
 #game-container {
