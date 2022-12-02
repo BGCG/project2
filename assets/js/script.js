@@ -31,10 +31,10 @@ let questions =
         },
 
         {
-            question: 'Which country did the Vikings attempt to invade but were challenged by some fierce citizens and therefore turned back',
+            question: 'Which country did the Romans attempt to invade but were challenged by some fierce citizens and therefore turned back',
             options: ['Germany', 'France', 'Scotland', 'England'],
             answer: 2,
-            answerExplaination: 'When the Vikings tried to envade Scotland they were challenged by some fierce Scottish warriors and decided it would be best to turn back and invade somewhere else'
+            answerExplaination: 'When the Romans tried to envade Scotland they were challenged by some fierce Scottish warriors and decided it would be best to turn back and invade somewhere else'
         },
     
         { 
