@@ -68,7 +68,7 @@ let questions =
         { 
             question: 'Which russian leader famously photoshopped himself with another russian leader?',
             options: ['Lenin', 'Stalin', 'Prince James', 'Prince Albert'],
-            answer: 3,
+            answer: 1,
             answerExplaination: 'Stalin famously photoshopped himself with Lenin to give the false impression of companionship between them'
     
         },
@@ -96,6 +96,21 @@ let questions =
     
     
     ]
+
+    function setFreshQuestion() {
+
+        for (let questionsIterations in shuffledQuestions) {
+            let shuffledQuestions = questions.sort(() => Math.random() - .5); 
+            let usedQuestions = shuffledQuestions[questionsIterations];
+            if (usedQuestions != currentQuestionIndex) {
+                showNextQuestion(); 
+            } else {
+                shuffledQuestions;
+            }
+        }
+    }
+
+    
 
 function showQuestion(question) {
     questionBox1.classList.remove('hide');
