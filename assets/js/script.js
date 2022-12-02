@@ -31,6 +31,34 @@ let questions =
         },
 
         {
+            question: 'In Scottish history what was the name of braveheart?',
+            options: ['Robert Burns', 'William Wallace', 'Benjamin Bland', 'Robert the Bruce'],
+            answer: 1,
+            answerExplaination: 'Braveheart was named William Wallace. He was famously hung, drawn and quartered by the English and his statue is outside Edinburgh Castle'
+        },
+
+        {
+            question: 'Who killed John F Kennedy?',
+            options: ['Lee Harvery Oswald', 'Mark Chapman', 'John Wilkes Booth', 'Gavrilo Princip'],
+            answer: 0,
+            answerExplaination: 'Lee Harvey Oswalk killed John F Kennedy with sniper riffle in Dallas, Texas. Days later he himself was killed by Jack Ruby. '
+        },
+
+        {
+            question: 'Who was the British prime minister which served during World War 2?',
+            options: ['John Major', 'Clement Attlee', 'Winston Churchill', 'David LLoyd George'],
+            answer: 2,
+            answerExplaination: 'Winston Churchill served as British prime minister from 1940-1945'
+        },
+
+        {
+            question: 'What Roman holiday was Julius Caesar killed on?',
+            options: ['Christmas', 'The ides of March', 'Easter', 'Liberalia'],
+            answer: 1,
+            answerExplaination: 'Julius Caesar was assinated on the Roman holiday called the Ides of March. He was killed by his senators including one which he viewed of as a son - Brutus - because he declared himself dictator for life.'
+        },
+
+        {
             question: 'Which country did the Romans attempt to invade but were challenged by some fierce citizens and therefore turned back',
             options: ['Germany', 'France', 'Scotland', 'England'],
             answer: 2,
@@ -38,10 +66,10 @@ let questions =
         },
     
         { 
-            question: 'Which prince was married to Queen Victoria?',
-            options: ['Prince of Wales', 'Prince George', 'Prince James', 'Prince Albert'],
+            question: 'Which russian leader famously photoshopped himself with another russian leader?',
+            options: ['Lenin', 'Stalin', 'Prince James', 'Prince Albert'],
             answer: 3,
-            answerExplaination: 'Prince Albert was married to Queen Victoria'
+            answerExplaination: 'Stalin famously photoshopped himself with Lenin to give the false impression of companionship between them'
     
         },
     
@@ -58,6 +86,14 @@ let questions =
             answer: 2,
             answerExplaination: 'The battle of Hastings occuring in 1066 in, you guessed it, Hastings!'
         },
+
+        {
+            question: 'Who of the following did Cleopatra have a romantic relationship with?',
+            options: ['Pompey', 'Brutus', 'Julius Caesar', 'Cicero'],
+            answer: 2,
+            answerExplaination: 'Cleopatra had a romantic relationship with Julius Caesar, for which they had a child together. This is the origin for the naming of a caesarian section.'
+        },
+    
     
     ]
 
@@ -131,9 +167,7 @@ function showQuestion(question) {
         
     }
 }
-                
-    
-    
+              
 function restartGame() {
     questionBox1.classList.add('hide');
     nextButton.classList.add('hide');

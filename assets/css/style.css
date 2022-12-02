@@ -19,7 +19,7 @@ body {
 }
 
 #background-image {
-    background: url('pexels-lisa-fotios-9480102.jpg') no-repeat;
+    background: url('/assets/images/quiz-background.jpg') no-repeat;
     background-position: center;
     background-size: 100%;
     margin: 0 auto;
