@@ -1,52 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@700&family=Laila:wght@500&display=swap');
+
+.hide {
+    display: none;
+}
+
+#header-div {
+    color: black;
+    border-radius: 20px;
+    top: 0;
+    position: fixed;
+    margin-left: 120px;
+    display: block;
+}
 
 body {
-    background-color: peachpuff;
-    font-family: Sen, sans-serif;
+    color: white;
+    font-family: Alexandria, sans-serif;
+}
+
+#background-image {
+    background: url('pexels-lisa-fotios-9480102.jpg') no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin: 0 auto;
+    padding: 100px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+h1 {
+    font-family: Alexandria, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+h2 {
+    font-family: Alexandria, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;;
 }
 
 button {
-    background-color: peachpuff;
-    border: 0;
+    position: relative;
+    display: block;
+    padding: 10px;
+    height: 50px;
+    width: 200px;
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: whitesmoke;
+    font-family: Laila, Helvetica, sans-serif;
+    margin-left: 200px;
+    border-radius: 10px;
+}
+
+#question-container-main {
+background-color: #3e403f;
+justify-content: center;
+align-items: center;
+opacity: 0.95;
+width: 600px;
+height: 400px;
+border-radius: 10px;
+padding: 10px;
+margin: 0 auto;
+}
+
+#start-btn {
+    height: 80px;
+    width: 100px;
+    margin: 0 auto;
+    font-size: 30px;
+    border-radius: 20px;
+    top: 160px;
+}
+
+#next-btn, #restart-btn {
+    height: 50px;
+    width: 80px;
+    margin-left: 510px;
+    top: 540px;
+    position: fixed;
 }
 
 button:hover {
-    opacity: 0.5;
+    cursor: pointer;
+    font-weight: 400;
 }
 
-#logo-container {
-    margin: 0 auto;
-    text-align: center;
-}
-
-#logo {
-    font-size: 50px;
-}
-
-#hammer-emoji {
-    margin: 50px;
-    font-size: 500px;
-}
-
-.emoji {
-    font-size: 80px;
-    color: #3a3a3a;
-}
- 
-#game-container {
-    padding: 30px;
-    text-align: center;
-}
-
-#submit-btn {
-    font-family: Sen, sans-serif;
-    font-size: 25px;
-    background-color: peachpuff;
-    border-radius: 10%;
-    height: 50px;
-    width: 100px;
-    text-align: center;
+#explaination {
+    width: 480px;
+    text-align: justify;
 }
 
 
+@media (max-width: 800px) {
 
+    #question-container-main {
+        width: auto;
+    }
+}
