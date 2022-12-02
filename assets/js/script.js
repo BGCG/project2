@@ -61,38 +61,6 @@ let questions =
     
     ]
 
-    let questionsQ = Object.values(questions);
-// let userOptions = questions[0].options;
-
-    
-// function showQuestion(q) {
-//     questionBox1.classList.remove('hide');
-
-//     // below code has been helped significantly by the following video - https://www.youtube.com/watch?v=RswgVWKJRLM
-//     for (let i = 0; i < questions.length; i++) {
-//         questionText.innerText = questions[i].question;
-//         let optionsBtn = document.querySelectorAll('.btn');
-//         optionsBtn.forEach(function(element, index) {
-//         element.textContent = questions[i].options[index];
-
-//         element.addEventListener('click', function(){
-            
-//             if(questions[i].answer === index) {
-//                element.style.backgroundColor = 'green';
-//                element.textContent = 'Correct!';
-//             } else {
-//                 element.style.backgroundColor = 'red';
-//                 element.textContent = 'Wrong!';
-//             }
-//             explaination.classList.remove('hide');
-//             explaination.innerText = questions[i].answerExplaination;
-//         })
-//         });
-//     }
-//     resetState();
-//  console.log('Loop completed')
-//     }
-
 function showQuestion(question) {
     questionBox1.classList.remove('hide');
     currentQuestionIndex++;
@@ -164,31 +132,7 @@ function showQuestion(question) {
     }
 }
                 
-            
-        
-           
-        
-            
-        
-            
-            
-        
-
     
-
-        
-          
-  
-
-   
-//     function resetState() {
-// clearStatusClass(document.body)
-// }
-
-// function clearStatusClass(element) {
-//     element.classList.remove('Correct');
-//     element.classList.remove('Wrong');
-// }
     
 function restartGame() {
     questionBox1.classList.add('hide');
