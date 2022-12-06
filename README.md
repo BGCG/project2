@@ -1,6 +1,6 @@
 # History buff quiz #
 
-The history buff quiz is a light-hearted quiz testing the users knowledge of some well-known and perhaps some not so well know facts on history. It is intended for entertainment and educational purposes. The quiz covers many topics in history such as the Russian Soviet era, Henry VIII's reign, the Roman empire and American political history.  
+The history buff quiz is a light-hearted quiz testing the users knowledge of some well-known and perhaps some not so well known facts on history. It is intended for entertainment and educational purposes. The quiz covers many topics in history such as the Russian Soviet era, Henry VIII's reign, the Roman empire and American political history.  
 
 This project was built for the purpose of the project 2 submission for the Code Institute full stack software development diploma. This project is still under development.
 
@@ -14,17 +14,17 @@ For users who want to test their History knowledge and learn more about historic
 
 ### User goals ###
 
-* **Current user goals:** To remember these historical facts by repitions through the games. Due to the randomisation of questions with each gameplay, the user will have a high probability of seeing at least a few new questions with each gameplay. 
+* **Current user goals:** To remember these historical facts by repetitions through the games. Due to the randomisation of questions with each gameplay, the user will have a high probability of seeing at least a few new questions with each gameplay. 
 
 * **New user goals:** To test their knowledge on history and have some fun with it.
 
 ### Accessibility ###
 
-Dark text is overlayed on a white background or light text overlayed on dark background to enhance readability of the text. The image used for the backgrounnd image for decorative purposes only.
+Dark text is overlayed on a white background or light text overlayed on dark background to enhance readability of the text. The image used for the background image for decorative purposes only.
 
 ### Responsive design ###
 
-This game was built with repsonsive design in mind using media queries to make it compatible for screen sizes of various smartphones, tablets, laptop and desktop.
+This game was built with responsive design in mind using media queries to make it compatible for screen sizes of various smartphones, tablets, laptop and desktop.
 
 ## Design ##
 
@@ -39,7 +39,7 @@ The quiz has a background of ruins of a castle to represent the subject of the q
 
 ### Typography ###
 
-Laila font was used for the answer, next, start and restart buttons as it has a appearance reminisent of old scripts of historial texts. 
+Laila font was used for the answer, next, start and restart buttons as it has a appearance reminiscent of old scripts of historical texts. 
 I used Alexandria font as the header and question elements as this gives a slight contrast with Laila, emphasising this is a light-hearted quiz, although perhaps about serious subjects in history. 
 
 ## Features ## 
@@ -50,7 +50,7 @@ The start button is clickable and takes you to the first question.
 
 **Question display:** 
 
-The question is displayed with four options, when the button is clicked it will alert the user whether their response was wrong/invalid. A description below the option buttons will display the right answer with a small explaination. 
+The question is displayed with four options, when the button is clicked it will alert the user whether their response was wrong/invalid. A description below the option buttons will display the right answer with a small explanation. 
 
 The questions are randomised when the game starts which means at every game play event there is a high probability that the user will be present with some new questions.
 
@@ -83,13 +83,13 @@ The main areas that required the most troubleshooting and optimisation in this p
 
 ## Debugging ##
 
-My quiz background image wasn't appearing intially - I found removal of the intial '/' in the path in the url() in the background image selector in the css code solved this issue. Further troubleshooting of bugs will be discussed in the 'troubleshotting and optimisation' in the testing section. 
+My quiz background image wasn't appearing initially - I found removal of the initial '/' in the path in the url() in the background image selector in the css code solved this issue. Further troubleshooting of bugs will be discussed in the 'troubleshooting and optimisation' section in the testing section. 
 
 ## Deployment ##
 
 This site is hosted on GitHub pages by adhering to the following steps; 
 
-* Go to settings in project repositry
+* Go to settings in project repository
 * Click on pages 
 * Set branch to 'main' 
 
@@ -116,7 +116,7 @@ The site can be found [here](https://bgcg.github.io/project2/).
 
 When starting this project, I sought some inspiration on how to approach how to build an online quiz. I found the youtube video from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1172s) very informative on how to approach building an online quiz. I took a different approach in a multiple areas but did use the following code to randomise the questions: `sortQuestions = questions.sort(() => Math.random() - 0.5);`. 
 
-My main areas of troubleshotting were the iteration through the options to make the correct options appear in the button elements. I found the [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post really helpful and the following [youtube video](https://www.youtube.com/watch?v=RswgVWKJRLM) iterate through options; which advised using the .forEach method of iterating through each element. In the troubleshooting and optimisation above I descirbed opting for a different approach to using a for loop where declared a global `i` variable for my iteration - I found this [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post in helping me achieve this. 
+My main areas of troubleshooting were the iteration through the options to make the correct options appear in the button elements. I found the [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post really helpful and the following [youtube video](https://www.youtube.com/watch?v=RswgVWKJRLM) iterate through options; which advised using the .forEach method of iterating through each element. In the troubleshooting and optimisation above I described opting for a different approach to using a for loop where declared a global `i` variable for my iteration - I found this [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post in helping me achieve this. 
 
 To select all my option buttons I made use of the querySelectorAll selector; I found the [folkstalk](https://www.folkstalk.com/2022/09/event-listener-to-elements-with-class-with-code-examples.html) post helpful in learning how to use this selector.  
 
@@ -124,7 +124,7 @@ When the user moved to the next question, I wanted the button to refresh its col
 
 When the quiz ended I wanted the page to refresh when the user pressed the 'Restart' button. I found the following [stack overflow](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click) post helpful. 
 
-For the CSS styling, I was having issues with centering my question container on the page - I found the reply from avdgaag in this [stack overflow](https://stackoverflow.com/questions/953918/how-to-align-a-div-to-the-middle-horizontally-width-of-the-page) post helpful in achieveing this who suggests to `text-align: center;` your body element to ease positioning of other elements on the page. 
+For the CSS styling, I was having issues with centering my question container on the page - I found the reply from avdgaag in this [stack overflow](https://stackoverflow.com/questions/953918/how-to-align-a-div-to-the-middle-horizontally-width-of-the-page) post helpful in achieving this who suggests to `text-align: center;` your body element to ease positioning of other elements on the page. 
 
 ### Images ### 
 
@@ -133,4 +133,5 @@ The background image was provided by [pexels.com](https://www.pexels.com/photo/g
 ### People ###
 
 For my mentor for her feedback and tutor support at code institute for pointers on how to solve specific issues with the code. My fiance Benjamin Bland, who studied History at University, for input into good questions to use in the quiz and to check to ensure they were accurate. 
+
 
