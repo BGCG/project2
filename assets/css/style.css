@@ -43,6 +43,7 @@ h2 {
     font-family: Alexandria, Helvetica, sans-serif;
     font-size: 20px;
     padding-bottom: 10px;;
+    text-align: left;
 }
 
 button {
@@ -51,11 +52,9 @@ button {
     padding: 10px;
     height: 50px;
     width: 200px;
-    font-family: sans-serif;
     font-size: 15px;
     background-color: whitesmoke;
     font-family: Laila, Helvetica, sans-serif;
-    margin-left: 200px;
     border-radius: 10px;
 }
 
@@ -65,10 +64,12 @@ justify-content: center;
 align-items: center;
 opacity: 0.95;
 width: 600px;
-height: 400px;
+height: 600px;
 border-radius: 10px;
 padding: 10px;
-margin: 0 auto;
+margin-left: 60%;
+position: relative;
+display: inline-block;
 }
 
 #start-btn {
@@ -83,18 +84,17 @@ margin: 0 auto;
 #next-btn, #restart-btn {
     height: 50px;
     width: 80px;
-    margin-left: 510px;
-    top: 540px;
-    position: fixed;
+    top: 20px;
+    position: relative;
 }
 
 button:hover {
     cursor: pointer;
-    font-weight: 400;
 }
 
 #explaination {
     width: 480px;
+    padding: 5px;
     text-align: justify;
 }
 
