@@ -1,7 +1,7 @@
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 let questionBox = document.getElementById('question-container');
-const restartButton = document.getElementById('restartGameDiv');
+const restartButton = document.getElementById('restart-game-div');
 const questionText = document.getElementById('question-text');
 let explaination = document.getElementById('explaination');
 
@@ -178,7 +178,6 @@ let questions =
 
 function showQuestion() {
 
-
     questionBox.classList.remove('hide');
 
     questionText.innerText = questions[currentQuestionIndex].question;
@@ -207,11 +206,13 @@ function showQuestion() {
     resetState();
 }
 
-/** Show next button and iterate to next question in questions array. Activate resetButton and showNextQuestion function. */
+/** Show next button and iterate to next question in questions array. */
 
 function resetState() {
     nextButton.classList.remove('hide');
     };
+
+// Activate resetButton and showNextQuestion function.
 
     nextButton.addEventListener('click', function () {
         showNextQuestion(currentQuestionIndex);
