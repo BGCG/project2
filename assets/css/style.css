@@ -52,7 +52,7 @@ h1 {
 h2 {
     font-family: Alexandria, Helvetica, sans-serif;
     font-size: 20px;
-    padding-bottom: 10px;;
+    padding-bottom: 10px;
     text-align: left;
 }
 
@@ -73,17 +73,17 @@ button {
 /* Styling and positioning of question container */
 
 #question-container-main {
-background-color: #3e403f;
-justify-content: center;
-align-items: center;
-opacity: 0.95;
-width: 600px;
-height: 600px;
-border-radius: 10px;
-padding: 10px;
-margin-left: 60%;
-position: relative;
-display: inline-block;
+    background-color: #3e403f;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.95;
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 60%;
+    position: relative;
+    display: inline-block;
 }
 
 /* Specific styling of individual start, restart and next buttons */
@@ -97,7 +97,8 @@ display: inline-block;
     top: 160px;
 }
 
-#next-btn, #restart-btn {
+#next-btn,
+#restart-btn {
     height: 50px;
     width: 80px;
     top: 20px;
@@ -123,77 +124,76 @@ button:hover {
 @media (max-width: 900px) {
 
     #question-container-main {
-            width: auto;
-            height: 550px;
-            margin-left: 25%;
-    
-        }
-    
+        width: auto;
+        height: 550px;
+        margin-left: 25%;
+
+    }
+
     button {
         margin-left: 100px;
     }
-    
+
     #next-btn {
         margin-left: 250px;
     }
-    
+
     #restart-btn {
         margin-left: 150px;
         margin-top: 200px;
     }
-    
+
     #start-btn {
         margin-top: 100px;
     }
-    
+
     #explaination {
-    width: auto;
+        width: auto;
     }
-    }
-    
+}
+
 /* Media queries for screen sizes min-width 200px */
 
-    @media (min-width: 200px) {
+@media (min-width: 200px) {
 
-        #question-container-main {
-            padding: 5px;
-            width: 270px;
-            height: 600px;
-            margin-left: -50px;
-        }
-    
-    
-        h1 {
-            text-align: left;
-    
-        }
-    
-    
-        h2 {
-            margin-right: 25px;
-        }
-    
-        #explaination {
-            width: 90%;
-            }
-    
-        #background-image {
-            height: 700px;
-            width: auto;
-            background-size: cover;
-        }
-    
-        .btn {
-         margin-left: 33px;
-        }
-    
-        #next-btn {
-            margin-left: 185px;
-        }
-    
-        #restart-btn {
-            margin-left: 95px;
-        }
-    
+    #question-container-main {
+        padding: 5px;
+        width: 270px;
+        height: 600px;
+        margin-left: -50px;
     }
-    
+
+
+    h1 {
+        text-align: left;
+
+    }
+
+
+    h2 {
+        margin-right: 25px;
+    }
+
+    #explaination {
+        width: 90%;
+    }
+
+    #background-image {
+        height: 700px;
+        width: auto;
+        background-size: cover;
+    }
+
+    .btn {
+        margin-left: 33px;
+    }
+
+    #next-btn {
+        margin-left: 185px;
+    }
+
+    #restart-btn {
+        margin-left: 95px;
+    }
+
+}

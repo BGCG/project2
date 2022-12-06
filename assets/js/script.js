@@ -18,15 +18,15 @@ let i = 0;
 /** Start game function will hide start button and activate show question function */
 
 function startGame() {
-    startButton.classList.add('hide');   
+    startButton.classList.add('hide');
     showQuestion();
 }
 
 // Questions array storing all questions used in the quiz
 
-let questions = 
+let questions =
 
-    [ 
+    [
 
         {
             question: 'Why did Henry VIII create the Church of England?',
@@ -69,22 +69,22 @@ let questions =
             answer: 2,
             answerExplaination: 'When the Romans tried to envade Scotland they were challenged by some fierce Scottish warriors and decided it would be best to turn back and invade somewhere else'
         },
-    
-        { 
+
+        {
             question: 'Which russian leader famously photoshopped himself with another russian leader?',
             options: ['Lenin', 'Stalin', 'Prince James', 'Prince Albert'],
             answer: 1,
             answerExplaination: 'Stalin famously photoshopped himself with Lenin to give the false impression of companionship between them'
-    
+
         },
-    
+
         {
             question: 'What was quote was famously attributed to Marie Antoinette?',
             options: ['"Let them drink blood"', '"Let them eat mud"', '"Let them eat cake"', '"Let them eat bread"'],
             answer: 2,
             answerExplaination: 'Marie antionete was famously quoted to say "Let them eat cake" when France was experiencing an economic downturn and widespread poverty. However, it has been disputed by Historians whether this is what she actually said or if it was a mistranslation'
         },
-    
+
         {
             question: 'What year did the battle of hastings occur?',
             options: ['1540', '1155', '1066', '984'],
@@ -140,22 +140,22 @@ let questions =
             answer: 2,
             answerExplaination: 'When the Romans tried to envade Scotland they were challenged by some fierce Scottish warriors and decided it would be best to turn back and invade somewhere else'
         },
-    
-        { 
+
+        {
             question: 'Which russian leader famously photoshopped himself with another russian leader?',
             options: ['Lenin', 'Stalin', 'Prince James', 'Prince Albert'],
             answer: 1,
             answerExplaination: 'Stalin famously photoshopped himself with Lenin to give the false impression of companionship between them'
-    
+
         },
-    
+
         {
             question: 'What was quote was famously attributed to Marie Antoinette?',
             options: ['"Let them drink blood"', '"Let them eat mud"', '"Let them eat cake"', '"Let them eat bread"'],
             answer: 2,
             answerExplaination: 'Marie antionete was famously quoted to say "Let them eat cake" when France was experiencing an economic downturn and widespread poverty. However, it has been disputed by Historians whether this is what she actually said or if it was a mistranslation'
         },
-    
+
         {
             question: 'What year did the battle of hastings occur?',
             options: ['1540', '1155', '1066', '984'],
@@ -169,99 +169,99 @@ let questions =
             answer: 2,
             answerExplaination: 'Cleopatra had a romantic relationship with Julius Caesar, for which they had a child together. This is the origin for the naming of a caesarian section.'
         }
-    
-    
+
+
     ];
 
-    // Method to randomly sort questions - code inspired from Web Dev Simiplified youtube video - https://www.youtube.com/watch?v=riDzcEQbX6k&t=1172s
+// Method to randomly sort questions - code inspired from Web Dev Simiplified youtube video - https://www.youtube.com/watch?v=riDzcEQbX6k&t=1172s
 
-    sortQuestions = questions.sort(() => Math.random() - 0.5);
+sortQuestions = questions.sort(() => Math.random() - 0.5);
 
 
-    /** Show question from questions array and options. Function will also show explaination with a click event. 
-     * Click event will also change color and text to provide feedback to user. Activate resetState function */
+/** Show question from questions array and options. Function will also show explaination with a click event. 
+ * Click event will also change color and text to provide feedback to user. Activate resetState function */
 
-    function showQuestion() {
+function showQuestion() {
 
-  
-        questionBox.classList.remove('hide');
-    
-        questionText.innerText = questions[i].question;
-    
-        
-            let optionsBtn = document.querySelectorAll('.btn');
-            
-            optionsBtn.forEach(function(element, index) {
-               
-            element.textContent = questions[i].options[index];
-    
-            element.addEventListener('click', function() {
-                if (questions[i].answer === index) {
-                   element.style.backgroundColor = 'green';
-                   element.textContent = 'Correct!';
-                } else {
-                    element.style.backgroundColor = 'red';
-                    element.textContent = 'Wrong!';
-                }
-              
-            explaination.classList.remove('hide');
-            explaination.innerText = questions[i].answerExplaination;
-                   
-            });
-            });
-    
-            resetState();
-        }
-        
-    /** Show next button and iterate to next question in questions array. Activate resetButton and showNextQuestion function. */
-    
-    function resetState() {
-        
-            
-            nextButton.classList.remove('hide');
-            nextButton.addEventListener('click', function() {
-                showNextQuestion(sortQuestions[i]);
-                resetButton();
-            });
-  }
 
-/** Reset button color back to white. */
+    questionBox.classList.remove('hide');
 
-  function resetButton() {
+    questionText.innerText = questions[i].question;
+
 
     let optionsBtn = document.querySelectorAll('.btn');
 
-    optionsBtn.forEach(function(element, index) {
+    optionsBtn.forEach(function (element, index) {
+
+        element.textContent = questions[i].options[index];
+
+        element.addEventListener('click', function () {
+            if (questions[i].answer === index) {
+                element.style.backgroundColor = 'green';
+                element.textContent = 'Correct!';
+            } else {
+                element.style.backgroundColor = 'red';
+                element.textContent = 'Wrong!';
+            }
+
+            explaination.classList.remove('hide');
+            explaination.innerText = questions[i].answerExplaination;
+
+        });
+    });
+
+    resetState();
+}
+
+/** Show next button and iterate to next question in questions array. Activate resetButton and showNextQuestion function. */
+
+function resetState() {
+
+
+    nextButton.classList.remove('hide');
+    nextButton.addEventListener('click', function () {
+        showNextQuestion(sortQuestions[i]);
+        resetButton();
+    });
+}
+
+/** Reset button color back to white. */
+
+function resetButton() {
+
+    let optionsBtn = document.querySelectorAll('.btn');
+
+    optionsBtn.forEach(function (element, index) {
         if (optionsBtn) {
             element.style.backgroundColor = 'white';
         }
     });
-        explaination.classList.add('hide');
-    }
-  
-    /** Conditional deciding to startGame if iterations are below 20 or activate restartGame function if iterations above 20 */
+    explaination.classList.add('hide');
+}
 
-  function showNextQuestion() {
+/** Conditional deciding to startGame if iterations are below 20 or activate restartGame function if iterations above 20 */
+
+function showNextQuestion() {
 
     i++;
 
-    if(i < 20) {
+    if (i < 20) {
         startGame();
         console.log('start game reactivated');
     } else {
-       restartGame();
-       console.log('else activated');
-        
+        restartGame();
+        console.log('else activated');
+
     }
 }
 
 /** Restart Game function which will unhide restart button which has a click event so when user clicks it will cause a page reload which will show start button */
-              
+
 function restartGame() {
     questionBox.classList.add('hide');
     nextButton.classList.add('hide');
     restartButton.classList.remove('hide');
-    restartButton.addEventListener('click', function onclick(){
+    restartButton.addEventListener('click', function onclick() {
         window.location.reload();
     });
 }
