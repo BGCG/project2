@@ -1,108 +1,145 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# History buff quiz #
 
-Welcome BGCG,
+The history buff quiz is a light-hearted quiz testing the users knowledge of some well-known and perhaps some not so well known facts on history. It is intended for entertainment and educational purposes. The quiz covers many topics in history such as the Russian Soviet era, Henry VIII's reign, the Roman empire and American political history.  
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This project was built for the purpose of the project 2 submission for the Code Institute full stack software development diploma. This project is still under development.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The site can be found [here](https://bgcg.github.io/project2/).
 
-## Gitpod Reminders
+## UX ##
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Audience ###
 
-`python3 -m http.server`
+For users who want to test their History knowledge and learn more about historical facts. 
 
-A blue button should appear to click: _Make Public_,
+### User goals ###
 
-Another blue button should appear to click: _Open Browser_.
+* **Current user goals:** To remember these historical facts by repetitions through the games. Due to the randomisation of questions with each gameplay, the user will have a high probability of seeing at least a few new questions with each gameplay. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* **New user goals:** To test their knowledge on history and have some fun with it.
 
-A blue button should appear to click: _Make Public_,
+### Accessibility ###
 
-Another blue button should appear to click: _Open Browser_.
+Dark text is overlayed on a white background or light text overlayed on dark background to enhance readability of the text. The image used for the background image for decorative purposes only.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Responsive design ###
 
-To log into the Heroku toolbelt CLI:
+This game was built with responsive design in mind using media queries to make it compatible for screen sizes of various smartphones, tablets, laptop and desktop.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Design ##
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Imagery ###
 
-------
+The quiz has a background of ruins of a castle to represent the subject of the quiz.
 
-## Release History
+### Color Scheme ###
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+ Dark tones (grey and black) used to represent the perhaps lack of colors of items in the past. 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Typography ###
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+Laila font was used for the answer, next, start and restart buttons as it has a appearance reminiscent of old scripts of historical texts. 
+I used Alexandria font as the header and question elements as this gives a slight contrast with Laila, emphasising this is a light-hearted quiz, although perhaps about serious subjects in history. 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Features ## 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+**Start button:**
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+The start button is clickable and takes you to the first question.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+**Question display:** 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The question is displayed with four options, when the button is clicked it will alert the user whether their response was wrong/invalid. A description below the option buttons will display the right answer with a small explanation when an option is clicked. 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+The questions are randomised when the game starts which means at every game play event there is a high probability that the user will be presented with some new questions.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+**Clickable interactivity:** 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+When the option buttons are clicked they will turn green and change text to 'Correct!' when the question is answered correctly or the button will turn red and display the text 'Wrong!' when the answer is incorrect. 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+**Next:**
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+The next button when clicked will display a new question with four options and the color of the buttons will be refreshed to white. 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+**Refresh:**
 
-------
+After 5 questions, a page will come up with a restart button so the user can restart the game if they wish - which will take them back to the start page. 
 
-## FAQ about the uptime script
+## Testing ##
+ 
+### Troubleshooting and optimisation ###
 
-**Why have you added this script?**
+The main areas that required the most troubleshooting and optimisation in this project was constructing the loops to iterate through each question. To iterate through the question I initially had a for loop to iterate through the questions which had an inner forEach loop to iterate through the options. The for loop was critical to the functionality of the forEach loop as the forEach loop would reference the iterator specified in the for loop. Unfortunately this caused some issues such as the loop repeating many times in the gameplay, ultimately resulting in the browser crashing (even though I had specified an end point conditional). Therefore, I had to opt for a different approach whereby I preserved the forEach for the questions but took away the for loop and created a global 'i' variable that I would use throughout the code and would be iterated and have a controlled stop point as determined by an if conditional statement in the showNextQuestion function regulating the number of iterations. I believe as in each question presented we also need to iterate through the options which add the number of looping that occurs which meant I had to set my end point to 20 to iterate through 5 questions to account for the increased number of loops. 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Key testing points ###
 
-**How will this affect me?**
+* Passed through HTML validator and no errors were found
+* Passed through CSS validator and no errors were found
+* Tested on Javascript JShint quality control tool 
+* Generated a lighthouse report using Dev Tools which yielded an excellent accessibility score
+* I confirm that the feedback alerted to the user is correct (i.e. question correct answers are accurate)
+* I confirmed that this quiz looks good across multiple devices which I tested using Chrome Developer tools 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Debugging ##
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+My quiz background image wasn't appearing initially - I found removal of the initial '/' in the path in the `url()` in the background image selector in the css code solved this issue. Further troubleshooting of bugs will be discussed in the 'troubleshooting and optimisation' section in the testing section. 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Deployment ##
 
-**So….?**
+This site is hosted on GitHub pages by adhering to the following steps; 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* Go to settings in project repository
+* Click on pages 
+* Set branch to 'main' 
 
-**Can I opt out?**
+The site can be found [here](https://bgcg.github.io/project2/).
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Technologies used ##
+ 
+* HTML
+* CSS 
+* Javascript
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Libraries and frameworks ###
 
-**Anything more?**
+* Google fonts for fonts Laila and Alexandria 
+* Am I responsive for the screenshots in the introduction to this README
+* Jshint Javascript validator 
+* Jigsaw CSS validator 
+* W3C HTML validator
+* The web hosting service GitHub was used to deploy this site
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Credits ##
 
----
+### Content ###
 
-Happy coding!
+When starting this project, I sought some inspiration on how to approach how to build an online quiz. I found the youtube video from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1172s) very informative on how to approach building an online quiz. I took a different approach in a multiple areas but did use the following code to randomise the questions: `sortQuestions = questions.sort(() => Math.random() - 0.5);`. 
+
+My main areas of troubleshooting were the iteration through the options to make the correct options appear in the button elements. I found the [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post really helpful and the following [youtube video](https://www.youtube.com/watch?v=RswgVWKJRLM) iterate through options; which advised using the .forEach method of iterating through each element. In the troubleshooting and optimisation above I described opting for a different approach to using a for loop where I declared a global `i` variable for my iteration - I found this [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post helpful in me achieve this. 
+
+To select all my option buttons, I made use of the querySelectorAll selector; I found the [folkstalk](https://www.folkstalk.com/2022/09/event-listener-to-elements-with-class-with-code-examples.html) post helpful in learning how to use this selector.  
+
+When the user moved to the next question, I wanted the button to refresh its color back to white (as if you user clicked on the button it would either be red or green and stay that way through the game unless I refreshed it). I found the following post helpful on [bobbyhadz](https://bobbyhadz.com/blog/javascript-change-button-color-onclick) helpful in me achieving this.
+
+When the quiz ended I wanted the page to refresh when the user pressed the 'Restart' button. I found the following [stack overflow](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click) post helpful. 
+
+For the CSS styling, I was having issues with centering my question container on the page - I found the reply from avdgaag in this [stack overflow](https://stackoverflow.com/questions/953918/how-to-align-a-div-to-the-middle-horizontally-width-of-the-page) post helpful in achieving this who suggests to `text-align: center;` your body element to ease positioning of other elements on the page. 
+
+### Images ### 
+
+The background image was provided by [pexels.com](https://www.pexels.com/photo/grayscale-photo-of-brick-building-9480102/) taken by the contributor Lisa Fotios.
+
+### People ###
+
+For my mentor for her feedback and tutor support at code institute for pointers on how to solve specific issues with the code. My fiance Benjamin Bland, who studied History at University, for input into good questions to use in the quiz and to check to ensure they were accurate. 
+
+## Historical facts references ##
+
+https://en.wikipedia.org/wiki/Penicillin
+https://en.wikipedia.org/wiki/On_the_Origin_of_Species
+https://www.nationalgeographic.com/history/article/giza-pyramids#:~:text=The%20Giza%20Pyramids%2C%20built%20to,constructed%20some%204%2C500%20years%20ago.
+https://www.royal.uk/house-windsor#:~:text=The%20House%20of%20Windsor%20came,of%20the%20current%20Royal%20Family.
+https://www.rome.net/circus-maximus#:~:text=The%20Circus%20Maximus%20in%20Rome,with%20space%20for%20300%2C000%20spectators.
+https://en.wikipedia.org/wiki/Yuri_Gagarin
+
