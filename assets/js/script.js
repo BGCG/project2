@@ -221,7 +221,7 @@ let questions =
     optionsBtn.forEach(function(element, index) {
         if (optionsBtn) {
             element.style.backgroundColor = 'white';
-        };
+        }
     });
         explaination.classList.add('hide');
     }
