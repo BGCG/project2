@@ -1,16 +1,14 @@
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 let questionBox = document.getElementById('question-container');
-const restartButton = document.getElementById('restartGameDiv')
-const btns = document.querySelectorAll('.btn');
+const restartButton = document.getElementById('restartGameDiv');
 const questionText = document.getElementById('question-text');
 let explaination = document.getElementById('explaination');
 
 let sortQuestions;
 
 startButton.addEventListener('click', startGame);
-currentQuestionIndex = 0;
-i = 0;
+let i = 0;
 
 
 function startGame() {
@@ -163,10 +161,10 @@ let questions =
             options: ['Pompey', 'Brutus', 'Julius Caesar', 'Cicero'],
             answer: 2,
             answerExplaination: 'Cleopatra had a romantic relationship with Julius Caesar, for which they had a child together. This is the origin for the naming of a caesarian section.'
-        },
+        }
     
     
-    ]
+    ];
 
     sortQuestions = questions.sort(() => Math.random() - 0.5);
 
@@ -181,8 +179,6 @@ let questions =
         questionText.innerText = questions[i].question;
     
         
-    
-        // console.log('questions loop activated')
             let optionsBtn = document.querySelectorAll('.btn');
             
             optionsBtn.forEach(function(element, index) {
@@ -190,7 +186,6 @@ let questions =
             element.textContent = questions[i].options[index];
     
             element.addEventListener('click', function() {
-                // console.log('options loop activated')
                 if (questions[i].answer === index) {
                    element.style.backgroundColor = 'green';
                    element.textContent = 'Correct!';
@@ -200,14 +195,12 @@ let questions =
                 }
               
             explaination.classList.remove('hide');
-            // console.log('explaination loop activated');
             explaination.innerText = questions[i].answerExplaination;
                    
-            })
+            });
             });
     
             resetState();
-            // console.log('Loop completed')
         }
         
     
@@ -228,9 +221,9 @@ let questions =
     optionsBtn.forEach(function(element, index) {
         if (optionsBtn) {
             element.style.backgroundColor = 'white';
-        }
-    })
-        explaination.classList.add('hide')
+        };
+    });
+        explaination.classList.add('hide');
     }
   
 
@@ -240,10 +233,10 @@ let questions =
 
     if(i < 20) {
         startGame();
-        console.log('start game reactivated')
+        console.log('start game reactivated');
     } else {
        restartGame();
-       console.log('else activated')
+       console.log('else activated');
         
     }
 }
@@ -253,6 +246,6 @@ function restartGame() {
     nextButton.classList.add('hide');
     restartButton.classList.remove('hide');
     restartButton.addEventListener('click', function onclick(){
-        window.location.reload()
-    })
+        window.location.reload();
+    });
 }
