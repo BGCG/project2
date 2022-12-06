@@ -1,6 +1,6 @@
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
-let questionBox1 = document.getElementById('question-container1');
+let questionBox = document.getElementById('question-container');
 const restartButton = document.getElementById('restartGameDiv')
 const btns = document.querySelectorAll('.btn');
 const questionText = document.getElementById('question-text');
@@ -170,18 +170,6 @@ let questions =
 
     sortQuestions = questions.sort(() => Math.random() - 0.5);
 
-    function setFreshQuestion() {
-
-        for (let questionsIterations in shuffledQuestions) {
-            let shuffledQuestions = questions.sort(() => Math.random() - .5); 
-            let usedQuestions = shuffledQuestions[questionsIterations];
-            if (usedQuestions != currentQuestionIndex) {
-                showNextQuestion(); 
-            } else {
-                shuffledQuestions;
-            }
-        }
-    }
 
     
 
@@ -245,11 +233,12 @@ let questions =
         explaination.classList.add('hide')
     }
   
-    let nextQuestion;
 
   function showNextQuestion() {
 
-    if(shuffledQuestions != maxQuestionIndex) {
+    i++;
+
+    if(i < 20) {
         startGame();
         console.log('start game reactivated')
     } else {
@@ -260,7 +249,7 @@ let questions =
 }
               
 function restartGame() {
-    questionBox1.classList.add('hide');
+    questionBox.classList.add('hide');
     nextButton.classList.add('hide');
     restartButton.classList.remove('hide');
     restartButton.addEventListener('click', function onclick(){
