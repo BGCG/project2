@@ -5,15 +5,14 @@ const restartButton = document.getElementById('restartGameDiv');
 const questionText = document.getElementById('question-text');
 let explaination = document.getElementById('explaination');
 
-let sortQuestions;
 
 // Event listener for start button which when clicked will activate start game
 
 startButton.addEventListener('click', startGame);
 
-// Assignment of i variable for future iteration
+// Assignment of currentQuestionIndex 
 
-let i = 0;
+let currentQuestionIndex = 0;
 
 /** Start game function will hide start button and activate show question function */
 
@@ -174,12 +173,6 @@ let questions =
     ];
 
 
-
-// Method to randomly sort questions - code inspired from Web Dev Simiplified youtube video - https://www.youtube.com/watch?v=riDzcEQbX6k&t=1172s
-
-sortQuestions = questions.sort(() => Math.random() - 0.5);
-
-
 /** Show question from questions array and options. Function will also show explaination with a click event. 
  * Click event will also change color and text to provide feedback to user. Activate resetState function */
 
@@ -188,17 +181,16 @@ function showQuestion() {
 
     questionBox.classList.remove('hide');
 
-    questionText.innerText = questions[i].question;
-
+    questionText.innerText = questions[currentQuestionIndex].question;
 
     let optionsBtn = document.querySelectorAll('.btn');
 
     optionsBtn.forEach(function (element, index) {
 
-        element.textContent = questions[i].options[index];
+        element.textContent = questions[currentQuestionIndex].options[index];
 
         element.addEventListener('click', function () {
-            if (questions[i].answer === index) {
+            if (questions[currentQuestionIndex].answer === index) {
                 element.style.backgroundColor = 'green';
                 element.textContent = 'Correct!';
             } else {
@@ -207,7 +199,7 @@ function showQuestion() {
             }
 
             explaination.classList.remove('hide');
-            explaination.innerText = questions[i].answerExplaination;
+            explaination.innerText = questions[currentQuestionIndex].answerExplaination;
 
         });
     });
@@ -218,14 +210,13 @@ function showQuestion() {
 /** Show next button and iterate to next question in questions array. Activate resetButton and showNextQuestion function. */
 
 function resetState() {
-
-
     nextButton.classList.remove('hide');
+    };
+
     nextButton.addEventListener('click', function () {
-        showNextQuestion(sortQuestions[i]);
+        showNextQuestion(currentQuestionIndex);
         resetButton();
-    });
-}
+    })
 
 /** Reset button color back to white. */
 
@@ -245,9 +236,9 @@ function resetButton() {
 
 function showNextQuestion() {
 
-    i++;
+    currentQuestionIndex++;
 
-    if (i < 20) {
+    if (currentQuestionIndex < questions.length) {
         startGame();
         console.log('start game reactivated');
     } else {

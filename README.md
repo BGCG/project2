@@ -14,7 +14,7 @@ For users who want to test their History knowledge and learn more about historic
 
 ### User goals ###
 
-* **Current user goals:** To remember these historical facts by repetitions through the games. Due to the randomisation of questions with each gameplay, the user will have a high probability of seeing at least a few new questions with each gameplay. 
+* **Current user goals:** To remember these historical facts by repetitions through the games.
 
 * **New user goals:** To test their knowledge on history and have some fun with it.
 
@@ -52,8 +52,6 @@ The start button is clickable and takes you to the first question.
 
 The question is displayed with four options, when the button is clicked it will alert the user whether their response was wrong/invalid. A description below the option buttons will display the right answer with a small explanation when an option is clicked. 
 
-The questions are randomised when the game starts which means at every game play event there is a high probability that the user will be presented with some new questions.
-
 **Clickable interactivity:** 
 
 When the option buttons are clicked they will turn green and change text to 'Correct!' when the question is answered correctly or the button will turn red and display the text 'Wrong!' when the answer is incorrect. 
@@ -64,13 +62,13 @@ The next button when clicked will display a new question with four options and t
 
 **Refresh:**
 
-After 5 questions, a page will come up with a restart button so the user can restart the game if they wish - which will take them back to the start page. 
+After 20 questions, a page will come up with a restart button so the user can restart the game if they wish - which will take them back to the start page. 
 
 ## Testing ##
  
 ### Troubleshooting and optimisation ###
 
-The main areas that required the most troubleshooting and optimisation in this project was constructing the loops to iterate through each question. To iterate through the question I initially had a for loop to iterate through the questions which had an inner forEach loop to iterate through the options. The for loop was critical to the functionality of the forEach loop as the forEach loop would reference the iterator specified in the for loop. Unfortunately this caused some issues such as the loop repeating many times in the gameplay, ultimately resulting in the browser crashing (even though I had specified an end point conditional). Therefore, I had to opt for a different approach whereby I preserved the forEach for the questions but took away the for loop and created a global 'i' variable that I would use throughout the code and would be iterated and have a controlled stop point as determined by an if conditional statement in the showNextQuestion function regulating the number of iterations. I believe as in each question presented we also need to iterate through the options which add the number of looping that occurs which meant I had to set my end point to 20 to iterate through 5 questions to account for the increased number of loops. 
+The main areas that required the most troubleshooting and optimisation in this project was constructing the loops to iterate through each question. To iterate through the question I initially had a for loop to iterate through the questions which had an inner forEach loop to iterate through the options. The for loop was critical to the functionality of the forEach loop as the forEach loop would reference the iterator specified in the for loop. Unfortunately this caused some issues such as the loop repeating many times in the gameplay, ultimately resulting in the browser crashing (even though I had specified an end point conditional). I contacted tutor support who advised me that I had an event listener for the next button present inside the resetButton() function that was causing this looping function and I moved the event listener outside the function which resolved this issue.
 
 ### Key testing points ###
 
@@ -114,9 +112,9 @@ The site can be found [here](https://bgcg.github.io/project2/).
 
 ### Content ###
 
-When starting this project, I sought some inspiration on how to approach how to build an online quiz. I found the youtube video from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1172s) very informative on how to approach building an online quiz. I took a different approach in a multiple areas but did use the following code to randomise the questions: `sortQuestions = questions.sort(() => Math.random() - 0.5);`. 
+When starting this project, I sought some inspiration on how to approach how to build an online quiz. I found the youtube video from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1172s) very informative on how to approach building an online quiz, however I took a different approach in a multiple areas.
 
-My main areas of troubleshooting were the iteration through the options to make the correct options appear in the button elements. I found the [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post really helpful and the following [youtube video](https://www.youtube.com/watch?v=RswgVWKJRLM) iterate through options; which advised using the .forEach method of iterating through each element. In the troubleshooting and optimisation above I described opting for a different approach to using a for loop where I declared a global `i` variable for my iteration - I found this [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post helpful in me achieve this. 
+My main areas of troubleshooting were the iteration through the options to make the correct options appear in the button elements. I found the [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post really helpful and the following [youtube video](https://www.youtube.com/watch?v=RswgVWKJRLM) iterate through options; which advised using the .forEach method of iterating through each element. 
 
 To select all my option buttons, I made use of the querySelectorAll selector; I found the [folkstalk](https://www.folkstalk.com/2022/09/event-listener-to-elements-with-class-with-code-examples.html) post helpful in learning how to use this selector.  
 
