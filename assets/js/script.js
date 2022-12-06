@@ -7,7 +7,11 @@ let explaination = document.getElementById('explaination');
 
 let sortQuestions;
 
+// Event listener for start button which when clicked will activate start game
+
 startButton.addEventListener('click', startGame);
+
+// Assignment of i variable for future iteration
 
 let i = 0;
 
@@ -17,6 +21,8 @@ function startGame() {
     startButton.classList.add('hide');   
     showQuestion();
 }
+
+// Questions array storing all questions used in the quiz
 
 let questions = 
 
@@ -167,7 +173,7 @@ let questions =
     
     ];
 
-    // Method to randomly sort questions 
+    // Method to randomly sort questions - code inspired from Web Dev Simiplified youtube video - https://www.youtube.com/watch?v=riDzcEQbX6k&t=1172s
 
     sortQuestions = questions.sort(() => Math.random() - 0.5);
 
