@@ -99,9 +99,34 @@ button:hover {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
     #question-container-main {
-        width: auto;
+            width: auto;
+            height: 550px;
+            margin-left: 25%;
+    
+        }
+    
+    button {
+        margin-left: 100px;
     }
-}
+    
+    #next-btn {
+        margin-left: 250px;
+    }
+    
+    #restart-btn {
+        margin-left: 150px;
+        margin-top: 200px;
+    }
+    
+    #start-btn {
+        margin-top: 100px;
+    }
+    
+    #explaination {
+    width: auto;
+    }
+    }
+    
