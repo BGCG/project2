@@ -69,6 +69,7 @@ button {
     background-color: whitesmoke;
     font-family: Laila, Helvetica, sans-serif;
     border-radius: 10px;
+    border: 2px gray solid;
 }
 
 /* Styling and positioning of question container */
@@ -93,7 +94,7 @@ button {
     height: 80px;
     width: 100px;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 27px;
     border-radius: 20px;
     top: 160px;
     color: black;
@@ -119,8 +120,8 @@ button:hover {
 #explaination {
     width: 480px;
     padding: 5px;
-    text-align: justify;
 }
+
 
 /* Media queries for screen sizes min-width 900px */
 
