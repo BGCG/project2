@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@700&family=Laila:wght@500&display=swap');
 
+/* Wildcard code to ease the process of positioning - from Code institute Love Running project */
+
 * {
     padding: 0;
     margin: 0;
 }
 
+/* Hide class to hide elements to be able to control visibility of elements in js */
+
 .hide {
     display: none;
 }
+
+/* Styling of header div */
 
 #header-div {
     color: black;
@@ -17,6 +23,7 @@
     justify-content: center;
 }
 
+/* Styling of body  */
 
 body {
     color: white;
@@ -24,13 +31,17 @@ body {
     text-align: center;
 }
 
+/* Accessing , positioning and styling of background image  */
+
 #background-image {
-    background: url('/assets/images/quiz-background.jpg') no-repeat;
+    background: url('../images/quiz-background.jpg') no-repeat;
     background-position: center;
     background-size: 100%;
     padding: 50px;
     width: auto;
 }
+
+/* Styling of h elements  */
 
 h1 {
     font-family: Alexandria, Helvetica, sans-serif;
@@ -44,6 +55,8 @@ h2 {
     padding-bottom: 10px;;
     text-align: left;
 }
+
+/* Styling of all buttons on page  */
 
 button {
     position: relative;
@@ -71,6 +84,8 @@ position: relative;
 display: inline-block;
 }
 
+/* Specific styling of individual start, restart and next buttons */
+
 #start-btn {
     height: 80px;
     width: 100px;
@@ -87,9 +102,13 @@ display: inline-block;
     position: relative;
 }
 
+/* Hover cursor effect of buttons */
+
 button:hover {
     cursor: pointer;
 }
+
+/* Styling of explaination div  */
 
 #explaination {
     width: 480px;
@@ -97,6 +116,7 @@ button:hover {
     text-align: justify;
 }
 
+/* Media queries for screen sizes min-width 900px */
 
 @media (max-width: 900px) {
 
@@ -129,6 +149,7 @@ button:hover {
     }
     }
     
+/* Media queries for screen sizes min-width 200px */
 
     @media (min-width: 200px) {
 
