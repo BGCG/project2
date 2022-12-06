@@ -2,6 +2,10 @@
 
 The history buff quiz is a light-hearted quiz testing the users knowledge of some well-known and perhaps some not so well know facts on history. It is intended for entertainment and educational purposes. The quiz covers many topics in history such as the Russian Soviet era, Henry VIII's reign, the Roman empire and American political history.  
 
+This project was built for the purpose of the project 2 submission for the Code Institute full stack software development diploma. This project is still under development.
+
+The site can be found [here](https://bgcg.github.io/project2/).
+
 ## UX ##
 
 ### Audience ###
@@ -64,21 +68,32 @@ After 5 questions, a page will come up with a restart button so the user can res
 
 ## Testing ##
  
-###Troubleshooting and optimisation###
+### Troubleshooting and optimisation ###
 
 The main areas that required the most troubleshooting and optimisation in this project was constructing the loops to iterate through each question. To iterate through the question I initially had a for loop to iterate through the questions which had an inner forEach loop to iterate through the options. The for loop was critical to the functionality of the forEach loop as the forEach loop would reference the iterator specified in the for loop. Unfortunately this caused some issues such as the loop repeating many times in the gameplay, ultimately resulting in the browser crashing (even though I had specified an end point conditional). Therefore, I had to opt for a different approach whereby I preserved the forEach for the questions but took away the for loop and created a global 'i' variable that I would use throughout the code and would be iterated and have a controlled stop point as determined by an if conditional statement in the showNextQuestion function regulating the number of iterations. I believe as in each question presented we also need to iterate through the options which add the number of looping that occurs which mean I need to set my end point to 20 to iterate through 5 questions to account for the increased number of loops. 
 
 ### Key points ###
 
-* Tested on HTML validator 
-* Tested on CSS validator 
-* Tested on Javascript validator 
-* Tested on lighthouse 
+* Passed through HTML validator and no errors were found
+* Passed through CSS validator and no errors were found
+* Tested on Javascript JShint quality control tool 
+* Generated a lighthouse report using Dev Tools which yielded an excellent accessibility score
 * I confirm that the feedback alerted to the user is correct (i.e. question correct answers are accurate)
+* I confirmed that this quiz looks good in multiple devices using Chrome Developer tools 
 
 ## Debugging ##
 
-My quiz background image wasn't appearing intially - I found removal of the intial '/' in the path in the url() in the background image selector in the css code solved this issue. Further troubleshooting of bugs will be discussed in the 'troubleshotting and optimisation' section. 
+My quiz background image wasn't appearing intially - I found removal of the intial '/' in the path in the url() in the background image selector in the css code solved this issue. Further troubleshooting of bugs will be discussed in the 'troubleshotting and optimisation' in the testing section. 
+
+## Deployment ##
+
+This site is hosted on GitHub pages by adhering to the following steps; 
+
+* Go to settings in project repositry
+* Click on pages 
+* Set branch to 'main' 
+
+The site can be found [here](https://bgcg.github.io/project2/).
 
 ## Technologies used ##
  
@@ -89,10 +104,11 @@ My quiz background image wasn't appearing intially - I found removal of the inti
 ### Libraries and frameworks ###
 
 * Google fonts for fonts Laila and Alexandria 
-* Am I responsive for the screenshots in the introduction
+* Am I responsive for the screenshots in the introduction to this README
 * Jshint Javascript validator 
 * Jigsaw CSS validator 
 * W3C HTML validator
+* The web hosting service GitHub was used to deploy this site
 
 ## Credits ##
 
@@ -100,7 +116,7 @@ My quiz background image wasn't appearing intially - I found removal of the inti
 
 When starting this project, I sought some inspiration on how to approach how to build an online quiz. I found the youtube video from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1172s) very informative on how to approach building an online quiz. I took a different approach in a multiple areas but did use the following code to randomise the questions: `sortQuestions = questions.sort(() => Math.random() - 0.5);`. 
 
-My main areas of troubleshotting were the iteration through the options to make the correct options appear in the button elements. I found the [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post really helpful and the following [youtube video](https://www.youtube.com/watch?v=RswgVWKJRLM) iterate through options; which advised using the .forEach method of iterating through each element. 
+My main areas of troubleshotting were the iteration through the options to make the correct options appear in the button elements. I found the [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post really helpful and the following [youtube video](https://www.youtube.com/watch?v=RswgVWKJRLM) iterate through options; which advised using the .forEach method of iterating through each element. In the troubleshooting and optimisation above I descirbed opting for a different approach to using a for loop where declared a global `i` variable for my iteration - I found this [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post in helping me achieve this. 
 
 To select all my option buttons I made use of the querySelectorAll selector; I found the [folkstalk](https://www.folkstalk.com/2022/09/event-listener-to-elements-with-class-with-code-examples.html) post helpful in learning how to use this selector.  
 
