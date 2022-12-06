@@ -233,7 +233,7 @@ function resetButton() {
     explaination.classList.add('hide');
 }
 
-/** Conditional deciding to startGame if iterations are below 20 or activate restartGame function if iterations above 20 */
+/** Conditional deciding to startGame if iterations are below questions array length or else activate restartGame function */
 
 function showNextQuestion() {
 
