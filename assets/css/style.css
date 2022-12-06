@@ -140,7 +140,7 @@ button:hover {
         }
     
     
-        h1{
+        h1 {
             text-align: left;
     
         }
@@ -155,7 +155,7 @@ button:hover {
             }
     
         #background-image {
-            height: 800px;
+            height: 700px;
             width: auto;
             background-size: cover;
         }
