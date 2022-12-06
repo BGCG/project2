@@ -8,8 +8,10 @@ let explaination = document.getElementById('explaination');
 let sortQuestions;
 
 startButton.addEventListener('click', startGame);
+
 let i = 0;
 
+/** Start game function will hide start button and activate show question function */
 
 function startGame() {
     startButton.classList.add('hide');  
@@ -166,10 +168,13 @@ let questions =
     
     ];
 
+    // Method to randomly sort questions 
+
     sortQuestions = questions.sort(() => Math.random() - 0.5);
 
 
-    
+    /** Show question from questions array and options. Function will also show explaination with a click event. 
+     * Click event will also change color and text to provide feedback to user. Activate resetState function */
 
     function showQuestion() {
 
@@ -203,6 +208,7 @@ let questions =
             resetState();
         }
         
+    /** Show next button and iterate to next question in questions array. Activate resetButton and showNextQuestion function. */
     
     function resetState() {
         
@@ -213,6 +219,8 @@ let questions =
                 resetButton();
             });
   }
+
+/** Reset button color back to white. */
 
   function resetButton() {
 
@@ -226,6 +234,7 @@ let questions =
         explaination.classList.add('hide');
     }
   
+    /** Conditional deciding to startGame if iterations are below 20 or activate restartGame function if iterations above 20 */
 
   function showNextQuestion() {
 
@@ -240,6 +249,8 @@ let questions =
         
     }
 }
+
+/** Restart Game function which will unhide restart button which has a click event so when user clicks it will cause a page reload which will show start button */
               
 function restartGame() {
     questionBox.classList.add('hide');
