@@ -14,9 +14,9 @@ For users who want to test their History knowledge and learn more about historic
 
 ### User goals ###
 
-* Current user goals: To remember these historical facts by repitions through the games. Due to the randomisation of questions with each gameplay, the user will have a high probability of seeing at least a few new questions with each gameplay. 
+* **Current user goals:** To remember these historical facts by repitions through the games. Due to the randomisation of questions with each gameplay, the user will have a high probability of seeing at least a few new questions with each gameplay. 
 
-* New user goals: To test their knowledge on history and have some fun with it.
+* **New user goals:** To test their knowledge on history and have some fun with it.
 
 ### Accessibility ###
 
@@ -72,7 +72,7 @@ After 5 questions, a page will come up with a restart button so the user can res
 
 The main areas that required the most troubleshooting and optimisation in this project was constructing the loops to iterate through each question. To iterate through the question I initially had a for loop to iterate through the questions which had an inner forEach loop to iterate through the options. The for loop was critical to the functionality of the forEach loop as the forEach loop would reference the iterator specified in the for loop. Unfortunately this caused some issues such as the loop repeating many times in the gameplay, ultimately resulting in the browser crashing (even though I had specified an end point conditional). Therefore, I had to opt for a different approach whereby I preserved the forEach for the questions but took away the for loop and created a global 'i' variable that I would use throughout the code and would be iterated and have a controlled stop point as determined by an if conditional statement in the showNextQuestion function regulating the number of iterations. I believe as in each question presented we also need to iterate through the options which add the number of looping that occurs which mean I need to set my end point to 20 to iterate through 5 questions to account for the increased number of loops. 
 
-### Key points ###
+### Key testing points ###
 
 * Passed through HTML validator and no errors were found
 * Passed through CSS validator and no errors were found
