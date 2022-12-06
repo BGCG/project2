@@ -14,8 +14,7 @@ let i = 0;
 /** Start game function will hide start button and activate show question function */
 
 function startGame() {
-    startButton.classList.add('hide');  
-    restartButton.classList.add('hide');  
+    startButton.classList.add('hide');   
     showQuestion();
 }
 
