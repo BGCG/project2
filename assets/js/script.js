@@ -92,7 +92,7 @@ let questions =
             options: ['Pompey', 'Brutus', 'Julius Caesar', 'Cicero'],
             answer: 2,
             answerExplaination: 'Cleopatra had a romantic relationship with Julius Caesar, for which they had a child together. This is the origin for the naming of a caesarian section.'
-        }
+        },
 
         {
             question: 'Why did Henry VIII create the Church of England?',
@@ -168,7 +168,7 @@ let questions =
     
     ]
 
-    sortQuestions = questions.sort(() => Math.random() - .5);
+    sortQuestions = questions.sort(() => Math.random() - 0.5);
 
     function setFreshQuestion() {
 
@@ -185,47 +185,50 @@ let questions =
 
     
 
-function showQuestion(question) {
-    questionBox1.classList.remove('hide');
-    currentQuestionIndex++;
+    function showQuestion() {
+
+  
+        questionBox.classList.remove('hide');
     
-    // below code has been helped significantly by the following video - https://www.youtube.com/watch?v=RswgVWKJRLM
-
-    for (let i = 0; i < questions.length; ++i) {
-        
         questionText.innerText = questions[i].question;
+    
         
-        let optionsBtn = document.querySelectorAll('.btn');
-        
-        optionsBtn.forEach(function(element, index) {
-
-        element.textContent = questions[i].options[index];
-
-        element.addEventListener('click', function(){
+    
+        // console.log('questions loop activated')
+            let optionsBtn = document.querySelectorAll('.btn');
             
-            if(questions[i].answer === index) {
-               element.style.backgroundColor = 'green';
-               element.textContent = 'Correct!';
-            } else {
-                element.style.backgroundColor = 'red';
-                element.textContent = 'Wrong!';
-            }
+            optionsBtn.forEach(function(element, index) {
+               
+            element.textContent = questions[i].options[index];
+    
+            element.addEventListener('click', function() {
+                // console.log('options loop activated')
+                if (questions[i].answer === index) {
+                   element.style.backgroundColor = 'green';
+                   element.textContent = 'Correct!';
+                } else {
+                    element.style.backgroundColor = 'red';
+                    element.textContent = 'Wrong!';
+                }
+              
             explaination.classList.remove('hide');
+            // console.log('explaination loop activated');
             explaination.innerText = questions[i].answerExplaination;
-        })
-        });
-    }
- 
-    resetState();
- console.log('Loop completed')
-    }
-
+                   
+            })
+            });
+    
+            resetState();
+            // console.log('Loop completed')
+        }
+        
+    
     function resetState() {
         
             
             nextButton.classList.remove('hide');
             nextButton.addEventListener('click', function() {
-                showNextQuestion(shuffledQuestions[currentQuestionIndex]);
+                showNextQuestion(sortQuestions[i]);
                 resetButton();
             });
   }
