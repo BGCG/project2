@@ -1,37 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@700&family=Laila:wght@500&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .hide {
     display: none;
 }
 
 #header-div {
     color: black;
-    border-radius: 20px;
     top: 0;
-    position: fixed;
-    margin-left: 120px;
     display: block;
+    align-items: center;
+    justify-content: center;
 }
+
 
 body {
     color: white;
     font-family: Alexandria, sans-serif;
+    text-align: center;
 }
 
 #background-image {
-    background: url('assets/images/quiz-background.jpg') no-repeat;
+    background: url('/assets/images/quiz-background.jpg') no-repeat;
     background-position: center;
     background-size: 100%;
-    margin: 0 auto;
-    padding: 100px;
-    width: 100%;
-    margin-top: 80px;
+    padding: 50px;
+    width: auto;
+    margin-top: 1000px;
 }
 
 h1 {
     font-family: Alexandria, Helvetica, sans-serif;
-    text-align: center;
     font-size: 30px;
+    padding: 10px;
 }
 
 h2 {
