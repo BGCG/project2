@@ -241,11 +241,8 @@ function showNextQuestion() {
 
     if (currentQuestionIndex < questions.length) {
         startGame();
-        console.log('start game reactivated');
     } else {
         restartGame();
-        console.log('else activated');
-
     }
 }
 
