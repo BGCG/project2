@@ -96,6 +96,7 @@ button {
     font-size: 30px;
     border-radius: 20px;
     top: 160px;
+    color: black;
 }
 
 #next-btn,
@@ -104,6 +105,7 @@ button {
     width: 80px;
     top: 20px;
     position: relative;
+    color: black;
 }
 
 /* Hover cursor effect of buttons */
