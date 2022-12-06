@@ -134,4 +134,12 @@ The background image was provided by [pexels.com](https://www.pexels.com/photo/g
 
 For my mentor for her feedback and tutor support at code institute for pointers on how to solve specific issues with the code. My fiance Benjamin Bland, who studied History at University, for input into good questions to use in the quiz and to check to ensure they were accurate. 
 
+## Historical facts references ##
+
+https://en.wikipedia.org/wiki/Penicillin
+https://en.wikipedia.org/wiki/On_the_Origin_of_Species
+https://www.nationalgeographic.com/history/article/giza-pyramids#:~:text=The%20Giza%20Pyramids%2C%20built%20to,constructed%20some%204%2C500%20years%20ago.
+https://www.royal.uk/house-windsor#:~:text=The%20House%20of%20Windsor%20came,of%20the%20current%20Royal%20Family.
+https://www.rome.net/circus-maximus#:~:text=The%20Circus%20Maximus%20in%20Rome,with%20space%20for%20300%2C000%20spectators.
+https://en.wikipedia.org/wiki/Yuri_Gagarin
 
