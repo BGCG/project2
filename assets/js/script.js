@@ -43,14 +43,14 @@ let questions =
             question: 'In Scottish history what was the name of braveheart?',
             options: ['Robert Burns', 'William Wallace', 'Benjamin Bland', 'Robert the Bruce'],
             answer: 1,
-            answerExplaination: 'Braveheart was named William Wallace. He was famously hung, drawn and quartered by the English and his statue is outside Edinburgh Castle'
+            answerExplaination: 'Braveheart was named William Wallace. He was famously hung, drawn and quartered by the English and his statue is outside Edinburgh Castle.'
         },
 
         {
             question: 'Who killed John F Kennedy?',
             options: ['Lee Harvery Oswald', 'Mark Chapman', 'John Wilkes Booth', 'Gavrilo Princip'],
             answer: 0,
-            answerExplaination: 'Lee Harvey Oswalk killed John F Kennedy with a sniper rifle in Dallas, Texas. Days later he himself was killed by Jack Ruby. '
+            answerExplaination: 'Lee Harvey Oswalk killed John F Kennedy with a sniper rifle in Dallas, Texas. Days later he himself was killed by Jack Ruby.'
         },
 
         {
@@ -68,17 +68,17 @@ let questions =
         },
 
         {
-            question: 'Which country did the Romans never invade due to some fierce resistance and therefore turned back',
+            question: 'Which country did the Romans never invade due to some fierce resistance and therefore turned back.',
             options: ['Germany', 'France', 'Scotland', 'England'],
             answer: 2,
-            answerExplaination: 'When the Romans tried to invade Scotland they were challenged by some fierce Scottish warriors and decided it would be best to turn back and invade somewhere else'
+            answerExplaination: 'When the Romans tried to invade Scotland they were challenged by some fierce Scottish warriors and decided it would be best to turn back and invade somewhere else.'
         },
 
         {
             question: 'Which russian leader famously photoshopped himself with another Russian leader?',
             options: ['Lenin', 'Stalin', 'Prince James', 'Prince Albert'],
             answer: 1,
-            answerExplaination: 'Stalin famously photoshopped himself with Lenin to give the false impression of companionship between them'
+            answerExplaination: 'Stalin famously photoshopped himself with Lenin to give the false impression of companionship between them.'
 
         },
 
@@ -86,7 +86,7 @@ let questions =
             question: 'What was quote was famously attributed to Marie Antoinette?',
             options: ['"Let them drink blood"', '"Let them eat mud"', '"Let them eat cake"', '"Let them eat bread"'],
             answer: 2,
-            answerExplaination: 'Marie antionete was famously quoted to say "Let them eat cake" when France was experiencing an economic downturn and widespread poverty. However, it has been disputed by Historians whether this is what she actually said or if it was a mistranslation'
+            answerExplaination: 'Marie antionete was famously quoted to say "Let them eat cake" when France was experiencing an economic downturn and widespread poverty. However, it has been disputed by Historians whether this is what she actually said or if it was a mistranslation.'
         },
 
         {
@@ -107,7 +107,7 @@ let questions =
             question: 'Who discovered Penicillin?',
             options: ['Alexander Fleming', 'Richard Cooper', 'Dorothy Hodgkin', 'Cecil Paine'],
             answer: 0,
-            answerExplaination: 'Alexander Fleming discovered Penicillin from extracts of a species of fungus, Penicillium rubens'
+            answerExplaination: 'Alexander Fleming discovered Penicillin from extracts of a species of fungus, Penicillium rubens.'
         },
 
         {
@@ -121,35 +121,35 @@ let questions =
             question: 'Who wrote the "Origin of species?"',
             options: ['Sigmund Freud', 'Mark Chapman', 'John Wilkes Booth', 'Charles Darwin'],
             answer: 3,
-            answerExplaination: 'Charles Darwin wrote the Origin of Species in 1859 which expressed his theory on evolution of species via natural selection'
+            answerExplaination: 'Charles Darwin wrote the Origin of Species in 1859 which expressed his theory on evolution of species via natural selection.'
         },
 
         {
             question: 'Who was is known to be the father of psychoanalysis?',
             options: ['Charles Darwin', 'Sigmund Freud', 'Carl Jung', 'David LLoyd George'],
             answer: 1,
-            answerExplaination: 'Sigmund Freud is considered to be the father of psychoanalysis'
+            answerExplaination: 'Sigmund Freud is considered to be the father of psychoanalysis.'
         },
 
         {
             question: 'What was the Circus Maximus used for in Rome?',
             options: ['A park', 'A market place', 'Gladiator fights', 'Chariot racing'],
             answer: 3,
-            answerExplaination: 'The Circus Maximus was used for Chariot racing. Fun fact it held around 300,000 people which is larger than most stadiums today'
+            answerExplaination: 'The Circus Maximus was used for Chariot racing. Fun fact it held around 300,000 people which is larger than most stadiums today.'
         },
 
         {
             question: 'When did the fall of the Berlin wall happen?',
             options: ['1985', '1995', '1989', '1990'],
             answer: 2,
-            answerExplaination: 'The Berlin wall was pulled down in 1989 reuniting east and west Germany'
+            answerExplaination: 'The Berlin wall was pulled down in 1989 reuniting east and west Germany.'
         },
 
         {
             question: 'The egyptians mummified which animal which they considered to be sacred?',
             options: ['Dogs', 'Mice', 'Cats', 'Horses'],
             answer: 2,
-            answerExplaination: 'Egyptians considered cats sacred and there is evidence that cats were mummified with their owners'
+            answerExplaination: 'Egyptians considered cats sacred and there is evidence that cats were mummified with their owners.'
 
         },
 
@@ -164,7 +164,7 @@ let questions =
             question: 'Which country had the first man in space?',
             options: ['US', 'China', 'USSR', 'India'],
             answer: 2,
-            answerExplaination: 'USSR sent Yuri Gagarin to space in 1961'
+            answerExplaination: 'USSR sent Yuri Gagarin to space in 1961.'
         },
 
         {
