@@ -218,6 +218,18 @@ function showQuestion() {
     resetState();
 }
 
+// Add to score when used clicks a correct answer 
+
+optionsBtn.forEach(function (element, index) {
+    element.addEventListener('click', function () {
+        if (questions[currentQuestionIndex].answer === index) {
+            score++;
+        }
+    })
+})
+
+
+
 
 
 /** Show next button and iterate to next question in questions array. */
@@ -233,7 +245,7 @@ function resetState() {
         resetButton();
     })
 
-/** Reset button color back to white. */
+/** Reset button color back to white, enable buttons and hide explaination */
 
 function resetButton() {
 
