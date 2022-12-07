@@ -218,6 +218,8 @@ function showQuestion() {
     resetState();
 }
 
+
+
 /** Show next button and iterate to next question in questions array. */
 
 function resetState() {
@@ -240,6 +242,7 @@ function resetButton() {
     optionsBtn.forEach(function (element, index) {
         if (optionsBtn) {
             element.style.backgroundColor = 'white';
+            element.disabled = false;
         }
     });
     explaination.classList.add('hide');

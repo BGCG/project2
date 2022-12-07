@@ -122,6 +122,10 @@ button:hover {
     padding: 5px;
 }
 
+.btn:disabled {
+    color: black;
+}
+
 
 /* Media queries for screen sizes min-width 900px */
 
