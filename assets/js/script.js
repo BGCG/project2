@@ -33,10 +33,10 @@ let questions =
     [
 
         {
-            question: 'Why did Henry VIII create the Church of England?',
-            options: ['To kill more people', 'To get a divorce', 'For a bet', 'Sunday drinking'],
-            answer: 1,
-            answerExplaination: 'Henry VII wanted to divorce his wife so created the Church of England as divorce was forbidden by the Catholic Church. He then went on to marry multiple wifes.'
+            question: 'Who was believed to be the first european to travel to North America?',
+            options: ['Christopher Columbus', 'James Cook', 'Leif Eriksson', 'Robert Livingston'],
+            answer: 2,
+            answerExplaination: 'Leif Eriksson is believed to be the first European man to travel to North America.'
         },
 
         {
@@ -68,14 +68,14 @@ let questions =
         },
 
         {
-            question: 'Which country did the Romans attempt to invade but were challenged by some fierce citizens and therefore turned back',
+            question: 'Which country did the Romans never invade due to some fierce resistance and therefore turned back',
             options: ['Germany', 'France', 'Scotland', 'England'],
             answer: 2,
             answerExplaination: 'When the Romans tried to invade Scotland they were challenged by some fierce Scottish warriors and decided it would be best to turn back and invade somewhere else'
         },
 
         {
-            question: 'Which russian leader famously photoshopped himself with another russian leader?',
+            question: 'Which russian leader famously photoshopped himself with another Russian leader?',
             options: ['Lenin', 'Stalin', 'Prince James', 'Prince Albert'],
             answer: 1,
             answerExplaination: 'Stalin famously photoshopped himself with Lenin to give the false impression of companionship between them'
@@ -90,17 +90,17 @@ let questions =
         },
 
         {
-            question: 'What year did the battle of hastings occur?',
+            question: 'What year did the Battle of Hastings occur?',
             options: ['1540', '1155', '1066', '984'],
             answer: 2,
-            answerExplaination: 'The battle of Hastings occuring in 1066 in, you guessed it, Hastings!'
+            answerExplaination: 'The Battle of Hastings occuring in 1066 in, you guessed it, Hastings!'
         },
 
         {
             question: 'Who of the following did Cleopatra have a romantic relationship with?',
             options: ['Pompey', 'Brutus', 'Julius Caesar', 'Cicero'],
             answer: 2,
-            answerExplaination: 'Cleopatra had a romantic relationship with Julius Caesar, for which they had a child together. This is the origin for the naming of a caesarian section.'
+            answerExplaination: 'Cleopatra had a romantic relationship with Julius Caesar, for which they had a child together.'
         },
 
         {
@@ -111,10 +111,10 @@ let questions =
         },
 
         {
-            question: 'In Scottish history what was the name of braveheart?',
-            options: ['Robert Burns', 'William Wallace', 'Benjamin Bland', 'Robert the Bruce'],
+            question: 'Why did Henry VIII create the Church of England?',
+            options: ['To kill more people', 'To get a divorce', 'For a bet', 'Sunday drinking'],
             answer: 1,
-            answerExplaination: 'Braveheart was named William Wallace. He was famously hung, drawn and quartered by the English and his statue is outside Edinburgh Castle'
+            answerExplaination: 'Henry VII wanted to divorce his wife so created the Church of England as divorce was forbidden by the Catholic Church. He then went on to marry multiple wifes.'
         },
 
         {
