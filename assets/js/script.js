@@ -5,7 +5,7 @@ const restartButton = document.getElementById('restart-game-div');
 const questionText = document.getElementById('question-text');
 let explaination = document.getElementById('explaination');
 let scoreArea = document.getElementById('score-area');
-let optionsBtn = document.querySelectorAll('.btn');
+let optionsBtn = document.querySelectorAll('.option');
 
 // Event listener for start button which when clicked will activate start game
 

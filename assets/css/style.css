@@ -122,7 +122,7 @@ button:hover {
     padding: 5px;
 }
 
-.btn:disabled {
+.option:disabled {
     color: black;
 }
 
@@ -191,7 +191,7 @@ button:hover {
         background-size: cover;
     }
 
-    .btn {
+    .option {
         margin-left: 33px;
     }
 
