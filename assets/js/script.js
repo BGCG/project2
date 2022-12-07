@@ -233,7 +233,12 @@ function resetState() {
 // Activate resetButton and showNextQuestion function.
 
 nextButton.addEventListener('click', function () {
-    showNextQuestion(currentQuestionIndex);
+    if (optionsBtn[0].disabled) {
+        showNextQuestion(currentQuestionIndex);
+    } else {
+        alert('Please select an option!');
+    }
+    
     resetButton();
 });
 
