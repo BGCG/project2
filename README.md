@@ -70,14 +70,19 @@ After 20 questions, a page will come up with a restart button so the user can re
 
 The main areas that required the most troubleshooting and optimisation in this project was constructing the loops to iterate through each question. I included `console.log` in the showNextQuestion() function which reported how many loops had been executed, where I found that when moving to the next question, there were three loops. I struggled to determine the root cause of this issue, thinking it could be due to iterations through the options which could be increasing the amount of loops when moving to a next question. I gained some clarification when I contacted tutor support who advised me that I had an event listener for the next button present inside the `resetButton()` function that was causing this excessive looping who advised me to move the event listener outside the function which resolved this issue.
 
+Additionally, I had an issue with the disabling the buttons so that the user couldn't just click multiple times on the buttons to either increase the score or select another button to find the right answer. I consulted some MDN and W3 schools documentation as described in the credits section of this README about the `:disable` pseudo-class and how to implement this in the JS script. However, I found when I wrote `optionsBtn.disabled = true` it was only working for the button that was clicked on. I was trying to solve this for a few hours and only coming to the rather simple conclusion that I need to specify the index of the button I would like to disable - which was all of them. 
+
 ### Key testing points ###
 
 * Passed through HTML validator and no errors were found
 * Passed through CSS validator and no errors were found
 * Tested on Javascript JShint quality control tool 
 * Generated a lighthouse report using Dev Tools which yielded an excellent accessibility score
+* Google Developer tools to test responsiveness of site and for fixing bugs in JS script
 * I confirm that the feedback alerted to the user is correct (i.e. question correct answers are accurate)
 * I confirmed that this quiz looks good across multiple devices which I tested using Chrome Developer tools 
+* GitPod to code the site and push to GitHub 
+* Visual studio code for project planning - in particular for the JS code as I required some space to practice before I implemented the final project in GitPod
 
 ## Debugging ##
 
@@ -121,6 +126,8 @@ To select all my option buttons, I made use of the querySelectorAll selector; I 
 When the user moved to the next question, I wanted the button to refresh its color back to white (as if you user clicked on the button it would either be red or green and stay that way through the game unless I refreshed it). I found the following post helpful on [bobbyhadz](https://bobbyhadz.com/blog/javascript-change-button-color-onclick) helpful in me achieving this.
 
 When the quiz ended I wanted the page to refresh when the user pressed the 'Restart' button. I found the following [stack overflow](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click) post helpful. 
+
+Intially, the user could select multiple answers so therefore with feedback from my tutor who suggested this would be best to change this, I implemented a disable CSS pseudo-class, in which I found the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled) helpful in describing how this works. Additionally, I found the [W3 Schools](https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp) page useful in infroming me how this would be used in the JS script to disable the buttons. 
 
 For the CSS styling, I was having issues with centering my question container on the page - I found the reply from avdgaag in this [stack overflow](https://stackoverflow.com/questions/953918/how-to-align-a-div-to-the-middle-horizontally-width-of-the-page) post helpful in achieving this who suggests to `text-align: center;` your body element to ease positioning of other elements on the page. 
 
