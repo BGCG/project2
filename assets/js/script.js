@@ -270,6 +270,8 @@ function showNextQuestion() {
         startGame();
     } else {
         restartGame();
+        scoreArea.classList.remove('hide');
+        scoreArea.textContent = `You answered ${score} correct questions out of 20 questions`;
     }
 }
 
