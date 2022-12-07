@@ -221,21 +221,21 @@ optionsBtn.forEach(function (element, index) {
         if (questions[currentQuestionIndex].answer === index) {
             score++;
         }
-    })
-})
+    });
+});
 
 /** Show next button and iterate to next question in questions array. */
 
 function resetState() {
     nextButton.classList.remove('hide');
-};
+}
 
 // Activate resetButton and showNextQuestion function.
 
 nextButton.addEventListener('click', function () {
     showNextQuestion(currentQuestionIndex);
     resetButton();
-})
+});
 
 /** Reset button color back to white, enable buttons and hide explaination */
 
