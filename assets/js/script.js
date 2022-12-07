@@ -189,8 +189,6 @@ function showQuestion() {
 
     questionText.innerText = questions[currentQuestionIndex].question;
 
-    let optionsBtn = document.querySelectorAll('.btn');
-
     optionsBtn.forEach(function (element, index) {
 
         element.textContent = questions[currentQuestionIndex].options[index];
@@ -248,9 +246,6 @@ function resetState() {
 /** Reset button color back to white, enable buttons and hide explaination */
 
 function resetButton() {
-
-    let optionsBtn = document.querySelectorAll('.btn');
-
     optionsBtn.forEach(function (element, index) {
         if (optionsBtn) {
             element.style.backgroundColor = 'white';
