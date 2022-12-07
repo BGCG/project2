@@ -4,6 +4,8 @@ let questionBox = document.getElementById('question-container');
 const restartButton = document.getElementById('restart-game-div');
 const questionText = document.getElementById('question-text');
 let explaination = document.getElementById('explaination');
+let scoreArea = document.getElementById('score-area');
+let optionsBtn = document.querySelectorAll('.btn');
 
 
 // Event listener for start button which when clicked will activate start game
@@ -13,6 +15,11 @@ startButton.addEventListener('click', startGame);
 // Assignment of currentQuestionIndex 
 
 let currentQuestionIndex = 0;
+
+
+// Assignment of score 
+
+let score = 0;
 
 /** Start game function will hide start button and activate show question function */
 
