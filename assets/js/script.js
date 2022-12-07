@@ -204,6 +204,11 @@ function showQuestion() {
                 element.textContent = 'Wrong!';
             }
 
+            optionsBtn[0].disabled = true;
+            optionsBtn[1].disabled = true;
+            optionsBtn[2].disabled = true;
+            optionsBtn[3].disabled = true;
+
             explaination.classList.remove('hide');
             explaination.innerText = questions[currentQuestionIndex].answerExplaination;
 
