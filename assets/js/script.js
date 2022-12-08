@@ -234,7 +234,7 @@ function resetState() {
 
 nextButton.addEventListener('click', function () {
     if (optionsBtn[0].disabled) {
-        showNextQuestion(currentQuestionIndex);
+        showNextQuestion();
     } else {
         alert('Please select an option!');
     }
@@ -258,7 +258,7 @@ function resetButton() {
 
 function showNextQuestion() {
 
-    currentQuestionIndex++;
+    questions[currentQuestionIndex]++;
 
     if (currentQuestionIndex < questions.length) {
         startGame();
