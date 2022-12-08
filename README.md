@@ -58,11 +58,11 @@ When the option buttons are clicked they will turn green and change text to 'Cor
 
 **Next:**
 
-The next button when clicked will display a new question with four options and the color of the buttons will be refreshed to white. 
+The next button when clicked will display a new question with four options and the color of the buttons will be refreshed to white. If the user tries to click the next button without selecting an option then an alert will pop up informing them to select a question before moving on. 
 
 **Refresh:**
 
-After 20 questions, a page will come up with a restart button so the user can restart the game if they wish - which will take them back to the start page. 
+After 20 questions, a page will come up with a restart button so the user can restart the game if they wish - which will take them back to the start page. Additionally, the user will be told the number of questions they answered correctly out of the total question number. 
 
 ## Testing ##
  
@@ -79,10 +79,9 @@ Additionally, I had an issue with the disabling the buttons so that the user cou
 * Tested on Javascript JShint quality control tool 
 * Generated a lighthouse report using Dev Tools which yielded an excellent accessibility score
 * Google Developer tools to test responsiveness of site and for fixing bugs in JS script
-* I confirm that the feedback alerted to the user is correct (i.e. question correct answers are accurate)
+* I confirm that the feedback alerted to the user is correct (i.e. question correct answers are accurate to the best of my knowledge)
 * I confirmed that this quiz looks good across multiple devices which I tested using Chrome Developer tools 
-* GitPod to code the site and push to GitHub 
-* Visual studio code for project planning - in particular for the JS code as I required some space to practice before I implemented the final project in GitPod
+
 
 ## Debugging ##
 
@@ -112,6 +111,8 @@ The site can be found [here](https://bgcg.github.io/project2/).
 * Jigsaw CSS validator 
 * W3C HTML validator
 * The web hosting service GitHub was used to deploy this site
+* GitPod a developer platform to write and edit the code which was eventually pushed to Github 
+* Visual studio code for project planning - in particular for the JS code as I required some space to practice before I implemented the final project in GitPod
 
 ## Credits ##
 
