@@ -72,6 +72,8 @@ The main areas that required the most troubleshooting and optimisation in this p
 
 Additionally, I had an issue with the disabling the buttons so that the user couldn't just click multiple times on the buttons to either increase the score or select another button to find the right answer. I consulted some MDN and W3 schools documentation as described in the credits section of this README about the `:disable` pseudo-class and how to implement this in the JS script. However, I found when I wrote `optionsBtn.disabled = true` it was only working for the button that was clicked on. I was trying to solve this for a few hours and only coming to the rather simple conclusion that I need to specify the index of the button I would like to disable - which was all of them. 
 
+When diabling buttons after a click event, I had some difficulties determining how to disable all the buttons. I found I had to specify the index of the buttons to disable as I couldn't figure out a way to disable all the buttons at once with the click event of one button. Therefore I specified all the indexes of the buttons in seperate lines of code. Although somewhat repetitive, it did the trick. In relation to disabling the buttons, I wanted to create an alert if the user tried to press the next button. To my knowledge, it's not possible to put a 'click' in a conditional if statement, so instead I used the button disabled condition as this event happens directly after the click event. I just used `optionsBtn[0].disable` as the condtional - as I only needed to target one of the buttons being disabled as the code above would disable all the buttons anyway. 
+
 ### Key testing points ###
 
 * Passed through HTML validator and no errors were found
@@ -138,16 +140,16 @@ The background image was provided by [pexels.com](https://www.pexels.com/photo/g
 
 ### People ###
 
-For my mentor for her feedback and tutor support at code institute for pointers on how to solve specific issues with the code. My fiance Benjamin Bland, who studied History at University, for input into good questions to use in the quiz and to check to ensure they were accurate. 
+For my mentor for her feedback and tutor support at Code Institute for pointers on how to solve specific issues with the code. My fiance Benjamin Bland, who studied History at University, for input into good questions to use in the quiz and to check to ensure they were accurate. 
 
 ## Historical facts references ##
 
-* I had to double checked the [pencillin wikipedia article](https://en.wikipedia.org/wiki/Penicillin) as I forgot which species of fungus pencillin was derived from. 
+* I had to double checked the [pencillin wikipedia article](https://en.wikipedia.org/wiki/Penicillin) as I forgot which species of fungus pencillin was derived from. I also wanted to check different scientists who worked on Pencillin so I could provide some good alternative answers to the user.  
 * The [Origin of Species Wikipedia](https://en.wikipedia.org/wiki/On_the_Origin_of_Species) article as I forgot the year which the book was published. 
 * I forgot the age of the pyramids so I check the [National Geographic](https://www.nationalgeographic.com/history/article/giza-pyramids#:~:text=The%20Giza%20Pyramids%2C%20built%20to,constructed%20some%204%2C500%20years%20ago) article.
 * I needed to double check the capacity of the Circus maximus so I double checked the [rome.net](https://www.rome.net/circus-maximus#:~:text=The%20Circus%20Maximus%20in%20Rome,with%20space%20for%20300%2C000%20spectators) website for this.
-* I forgot the name of the first man in space so I check the follow [Wikipedia](https://en.wikipedia.org/wiki/Yuri_Gagarin) article. 
+* I forgot the name of the first man in space so I checked the following [Wikipedia](https://en.wikipedia.org/wiki/Yuri_Gagarin) article. 
 * To double checked the name of the Viking explorer who is believed to be the first european to travel to North Ameria I checked the following [article]( https://www.npr.org/2007/10/08/15040888/coming-to-america-who-was-first#:~:text=We%20know%20now%20that%20Columbus,America%20and%20established%20a%20settlement.).
-* 
-* 
+
+
 
