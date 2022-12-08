@@ -142,10 +142,12 @@ For my mentor for her feedback and tutor support at code institute for pointers 
 
 ## Historical facts references ##
 
-https://en.wikipedia.org/wiki/Penicillin
-https://en.wikipedia.org/wiki/On_the_Origin_of_Species
-https://www.nationalgeographic.com/history/article/giza-pyramids#:~:text=The%20Giza%20Pyramids%2C%20built%20to,constructed%20some%204%2C500%20years%20ago.
-https://www.royal.uk/house-windsor#:~:text=The%20House%20of%20Windsor%20came,of%20the%20current%20Royal%20Family.
-https://www.rome.net/circus-maximus#:~:text=The%20Circus%20Maximus%20in%20Rome,with%20space%20for%20300%2C000%20spectators.
-https://en.wikipedia.org/wiki/Yuri_Gagarin
+* I had to double checked the [pencillin wikipedia article](https://en.wikipedia.org/wiki/Penicillin) as I forgot which species of fungus pencillin was derived from. 
+* The [Origin of Species Wikipedia](https://en.wikipedia.org/wiki/On_the_Origin_of_Species) article as I forgot the year which the book was published. 
+* I forgot the age of the pyramids so I check the [National Geographic](https://www.nationalgeographic.com/history/article/giza-pyramids#:~:text=The%20Giza%20Pyramids%2C%20built%20to,constructed%20some%204%2C500%20years%20ago) article.
+* I needed to double check the capacity of the Circus maximus so I double checked the [rome.net](https://www.rome.net/circus-maximus#:~:text=The%20Circus%20Maximus%20in%20Rome,with%20space%20for%20300%2C000%20spectators) website for this.
+* I forgot the name of the first man in space so I check the follow [Wikipedia](https://en.wikipedia.org/wiki/Yuri_Gagarin) article. 
+* To double checked the name of the Viking explorer who is believed to be the first european to travel to North Ameria I checked the following [article]( https://www.npr.org/2007/10/08/15040888/coming-to-america-who-was-first#:~:text=We%20know%20now%20that%20Columbus,America%20and%20established%20a%20settlement.).
+* 
+* 
 

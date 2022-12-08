@@ -36,7 +36,7 @@ let questions =
             question: 'Who was believed to be the first european to travel to North America?',
             options: ['Christopher Columbus', 'James Cook', 'Leif Eriksson', 'Robert Livingston'],
             answer: 2,
-            answerExplaination: 'Leif Eriksson is believed to be the first European man to travel to North America.'
+            answerExplaination: 'The Viking explorer, Leif Eriksson is believed to be the first European man to travel to North America.'
         },
 
         {
@@ -258,7 +258,7 @@ function resetButton() {
 
 function showNextQuestion() {
 
-    questions[currentQuestionIndex]++;
+    currentQuestionIndex++;
 
     if (currentQuestionIndex < questions.length) {
         startGame();
