@@ -145,11 +145,6 @@ button:hover {
 
     }
 
-    #restart-btn {
-        margin-left: 150px;
-        margin-top: 200px;
-    }
-
     #start-btn {
         margin-top: 100px;
     }
@@ -211,10 +206,6 @@ button:hover {
         height: 700px;
         width: auto;
         background-size: cover;
-    }
-
-    #restart-btn {
-        margin-left: 95px;
     }
 
 }
