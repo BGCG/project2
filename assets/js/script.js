@@ -22,14 +22,14 @@ let questions =
     [
 
         {
-            question: 'Who was believed to be the first european to travel to North America?',
+            question: 'Who was believed to be the first European to travel to North America?',
             options: ['Christopher Columbus', 'James Cook', 'Leif Eriksson', 'Robert Livingston'],
             answer: 2,
             answerExplaination: 'The Viking explorer, Leif Eriksson is believed to be the first European man to travel to North America.'
         },
 
         {
-            question: 'In Scottish history what was the name of braveheart?',
+            question: 'In Scottish history what was the name of Braveheart?',
             options: ['Robert Burns', 'William Wallace', 'Benjamin Bland', 'Robert the Bruce'],
             answer: 1,
             answerExplaination: 'Braveheart was named William Wallace. He was famously hung, drawn and quartered by the English and his statue is outside Edinburgh Castle.'
@@ -64,7 +64,7 @@ let questions =
         },
 
         {
-            question: 'Which russian leader famously photoshopped himself with another Russian leader?',
+            question: 'Which Russian leader famously photoshopped himself with another Russian leader?',
             options: ['Lenin', 'Stalin', 'Prince James', 'Prince Albert'],
             answer: 1,
             answerExplaination: 'Stalin famously photoshopped himself with Lenin to give the false impression of companionship between them.'
@@ -75,7 +75,7 @@ let questions =
             question: 'What was quote was famously attributed to Marie Antoinette?',
             options: ['"Let them drink blood"', '"Let them eat mud"', '"Let them eat cake"', '"Let them eat bread"'],
             answer: 2,
-            answerExplaination: 'Marie antionete was famously quoted to say "Let them eat cake" when France was experiencing an economic downturn and widespread poverty. However, it has been disputed by Historians whether this is what she actually said or if it was a mistranslation.'
+            answerExplaination: 'Marie Antionete was famously quoted to say "Let them eat cake" when France was experiencing an economic downturn and widespread poverty. However, it has been disputed by Historians whether this is what she actually said or if it was a mistranslation.'
         },
 
         {
@@ -131,11 +131,11 @@ let questions =
             question: 'When did the fall of the Berlin wall happen?',
             options: ['1985', '1995', '1989', '1990'],
             answer: 2,
-            answerExplaination: 'The Berlin wall was pulled down in 1989 reuniting east and west Germany.'
+            answerExplaination: 'The Berlin wall was pulled down in 1989 reuniting East and West Germany.'
         },
 
         {
-            question: 'The egyptians mummified which animal which they considered to be sacred?',
+            question: 'The Egyptians mummified which animal which they considered to be sacred?',
             options: ['Dogs', 'Mice', 'Cats', 'Horses'],
             answer: 2,
             answerExplaination: 'Egyptians considered cats sacred and there is evidence that cats were mummified with their owners.'
@@ -157,7 +157,7 @@ let questions =
         },
 
         {
-            question: 'What were the pyramids of egypt used for?',
+            question: 'What were the pyramids of Egypt used for?',
             options: ['Astrology', 'Prayer area', 'Houses', 'Tombs'],
             answer: 3,
             answerExplaination: 'Pyramids were used as tombs. Many of the pyramids are around 4000 years old - Cleopatra actually lived closer to us now than when they were built.'
