@@ -22,7 +22,7 @@ For users who want to test their History knowledge and learn more about historic
 
 ### Accessibility and Communication ###
 
-Dark text is overlayed on a white background or light text overlayed on dark background to enhance readability of the text. The image used for the background image for decorative purposes only.
+Dark text is overlayed on a white background or light text overlayed on dark background to enhance readability of the text. The image used for the background image to the quiz is for decorative purposes only.
 
 ### Responsive design ###
 
@@ -41,7 +41,7 @@ The quiz has a background of ruins of a castle to represent the subject of the q
 
 ### Typography ###
 
-Laila font was used for the answer, next, start and restart buttons as it has an appearance reminiscent of old scripts of historical texts. 
+Laila font was used for the options, next, start and restart buttons as it has an appearance reminiscent of old scripts of historical texts. 
 I used the Alexandria font as the header and question elements as this gives a slight contrast with Laila, emphasising this is a light-hearted quiz, although perhaps about serious subjects in history. 
 
 ## Features ## 
@@ -180,7 +180,7 @@ For my mentor for her feedback and tutor support at Code Institute for pointers 
 * I forgot the age of the pyramids so I checked the [National Geographic](https://www.nationalgeographic.com/history/article/giza-pyramids#:~:text=The%20Giza%20Pyramids%2C%20built%20to,constructed%20some%204%2C500%20years%20ago) article.
 * I needed to double check the capacity of the Circus maximus so I double checked the [rome.net](https://www.rome.net/circus-maximus#:~:text=The%20Circus%20Maximus%20in%20Rome,with%20space%20for%20300%2C000%20spectators) website for this.
 * I forgot the name of the first man in space so I checked the following [Wikipedia](https://en.wikipedia.org/wiki/Yuri_Gagarin) article. 
-* To double checked the name of the Viking explorer who is believed to be the first european to travel to North America I checked the following [article]( https://www.npr.org/2007/10/08/15040888/coming-to-america-who-was-first#:~:text=We%20know%20now%20that%20Columbus,America%20and%20established%20a%20settlement.).
+* To double checked the name of the Viking explorer who is believed to be the first European to travel to North America by checking the following [article]( https://www.npr.org/2007/10/08/15040888/coming-to-america-who-was-first#:~:text=We%20know%20now%20that%20Columbus,America%20and%20established%20a%20settlement.).
 
 
 
