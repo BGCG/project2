@@ -48,21 +48,32 @@ I used Alexandria font as the header and question elements as this gives a sligh
 
 The start button is clickable and takes you to the first question.
 
+![screenshot-of-start-button](assets/images/screenshots/home.png)
+
 **Question display:** 
 
 The question is displayed with four options, when the button is clicked it will alert the user whether their response was wrong/invalid. A description below the option buttons will display the right answer with a small explanation when an option is clicked. 
+
+![screenshot-of-options](assets/images/screenshots/quiz-options.jpg)
 
 **Clickable interactivity:** 
 
 When the option buttons are clicked they will turn green and change text to 'Correct!' when the question is answered correctly or the button will turn red and display the text 'Wrong!' when the answer is incorrect. 
 
+![screenshot-of-option-correct](assets/images/screenshots/quiz-options-correct.png)
+![screenshot-of-option-incorrect](assets/images/screenshots/quiz-options-incorrect.png)
+
 **Next:**
 
 The next button when clicked will display a new question with four options and the color of the buttons will be refreshed to white. If the user tries to click the next button without selecting an option then an alert will pop up informing them to select a question before moving on. 
 
+![screenshot-of-quiz-alert](assets/images/screenshots/quiz-alert.png)
+
 **Refresh:**
 
 After 20 questions, a page will come up with a restart button so the user can restart the game if they wish - which will take them back to the start page. Additionally, the user will be told the number of questions they answered correctly out of the total question number. 
+
+![screenshot-of-quiz-score](assets/images/screenshots/quiz-score.png)
 
 ## Testing ##
  
