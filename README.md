@@ -4,6 +4,8 @@ The history buff quiz is a light-hearted quiz testing the users knowledge of som
 
 This project was built for the purpose of the project 2 submission for the Code Institute full stack software development diploma. This project is still under development.
 
+![screenshot-of-amiresponsive](assets/images/screenshots/amiresponsive-screentshot.png)
+
 The site can be found [here](https://bgcg.github.io/project2/).
 
 ## UX ##
@@ -58,7 +60,7 @@ The question is displayed with four options, when the button is clicked it will 
 
 **Clickable interactivity:** 
 
-When the option buttons are clicked they will turn green and change text to 'Correct!' when the question is answered correctly or the button will turn red and display the text 'Wrong!' when the answer is incorrect. 
+When the option buttons are clicked they will turn green and change text to 'Correct!' when the question is answered correctly or the button will turn red and display the text 'Wrong!' when the answer is incorrect. Once the user has selected one option, all the buttons become disabled so the user can't break the game. 
 
 ![screenshot-of-option-correct](assets/images/screenshots/quiz-options-correct.png)
 ![screenshot-of-option-incorrect](assets/images/screenshots/quiz-options-incorrect.png)
@@ -88,6 +90,8 @@ When diabling buttons after a click event, I had some difficulties determining h
 ### Key testing points ###
 
 * Passed through HTML validator and no errors were found
+
+![screenshot-of-html-validator-results](assets/images/screenshots/html-validator-results.png)
 * Passed through CSS validator and no errors were found
 
 ![screenshot-of-css-validator-results](assets/images/screenshots/css-validator-results.png)
@@ -143,9 +147,9 @@ When starting this project, I sought some inspiration on how to approach how to 
 * Assignment of the question index to 0 and then iterating from there with index++ 
 * Hiding and unhiding elements using `element.classList.add('hide')` and adding a `.hide {display: none;}` in CSS
 
-Note: although I used the above tutorial as a guideline how to approach scripting a quiz, I customised my code throughout and took a different approach to dispalying the options than Web Dev Simplified.
+Note: although I used the above tutorial as a guideline how to approach scripting a quiz, I customised my code throughout such as I took a different approach to dispalying the options than Web Dev Simplified.
 
-My main areas of troubleshooting were the iteration through the options to make the correct options appear in the button elements. I found the [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post really helpful and the following [youtube video](https://www.youtube.com/watch?v=RswgVWKJRLM) iterate through options; which advised using the `.forEach` method of iterating through each element. 
+My main areas of troubleshooting were the iteration through the options to make the correct options appear in the button elements. I found the [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post really helpful and the following youtube video by [Zenva](https://www.youtube.com/watch?v=RswgVWKJRLM) iterate through options; which advised using the `.forEach` method of iterating through each element. 
 
 To select all my option buttons, I made use of the querySelectorAll selector; I found the [folkstalk](https://www.folkstalk.com/2022/09/event-listener-to-elements-with-class-with-code-examples.html) post helpful in learning how to use this selector.  
 

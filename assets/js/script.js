@@ -7,10 +7,6 @@ let explaination = document.getElementById('explaination');
 let scoreArea = document.getElementById('score-area');
 let optionsBtn = document.querySelectorAll('.option');
 
-// Event listener for start button which when clicked will activate start game
-
-startButton.addEventListener('click', startGame);
-
 // Assignment of currentQuestionIndex 
 
 let currentQuestionIndex = 0;
@@ -18,13 +14,6 @@ let currentQuestionIndex = 0;
 // Assignment of score 
 
 let score = 0;
-
-/** Start game function will hide start button and activate show question function */
-
-function startGame() {
-    startButton.classList.add('hide');
-    showQuestion();
-}
 
 // Questions array storing all questions used in the quiz
 
@@ -182,11 +171,11 @@ let questions =
  * Additionally, the option buttons will be disabled after one of the options is clicked on. */
 
 function showQuestion() {
-
+    startButton.classList.add('hide');
     questionBox.classList.remove('hide');
 
     questionText.innerText = questions[currentQuestionIndex].question;
-
+// Lines 179 to 184 are inspired by the teachings of Zenva - https://www.youtube.com/watch?v=RswgVWKJRLM
     optionsBtn.forEach(function (element, index) {
 
         element.textContent = questions[currentQuestionIndex].options[index];
@@ -261,7 +250,7 @@ function showNextQuestion() {
     currentQuestionIndex++;
 
     if (currentQuestionIndex < questions.length) {
-        startGame();
+        showQuestion();
     } else {
         restartGame();
         scoreArea.classList.remove('hide');
