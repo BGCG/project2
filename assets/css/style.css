@@ -51,7 +51,7 @@ h1 {
 
 h2 {
     font-family: Alexandria, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 10px;
     text-align: left;
 }
@@ -60,7 +60,8 @@ h2 {
 
 button {
     position: relative;
-    display: block;
+    display: block; 
+    margin: 0 auto;
     padding: 10px;
     height: 50px;
     width: 200px;
@@ -80,10 +81,10 @@ button {
     align-items: center;
     opacity: 0.95;
     width: 600px;
-    height: 600px;
+    height: 500px;
     border-radius: 10px;
     padding: 10px;
-    margin-left: 60%;
+    margin-left: 50%;
     position: relative;
     display: inline-block;
 }
@@ -98,6 +99,14 @@ button {
     border-radius: 20px;
     top: 160px;
     color: black;
+}
+
+.option {
+    left: -5px;;
+}
+
+#next-btn {
+    left: 40%;
 }
 
 #next-btn,
@@ -131,18 +140,9 @@ button:hover {
 @media (max-width: 900px) {
 
     #question-container-main {
-        width: auto;
-        height: 550px;
+        height: 600px;
         margin-left: 25%;
 
-    }
-
-    button {
-        margin-left: 100px;
-    }
-
-    #next-btn {
-        margin-left: 250px;
     }
 
     #restart-btn {
@@ -159,14 +159,36 @@ button:hover {
     }
 }
 
+/* Media queries for screen sizes max-width 500px  */
+
+@media (max-width: 500px) {
+ 
+     #next-btn {
+        margin-left: 30px;
+    } 
+
+}
+
+
+@media (max-width: 608px) {
+ 
+    #question-container-main {
+       width: 280px;
+   } 
+
+   #next-btn {
+    margin-left: 50px;
+} 
+
+
+}
+
 /* Media queries for screen sizes min-width 200px */
 
 @media (min-width: 200px) {
 
     #question-container-main {
         padding: 5px;
-        width: 270px;
-        height: 600px;
         margin-left: -50px;
     }
 
@@ -189,14 +211,6 @@ button:hover {
         height: 700px;
         width: auto;
         background-size: cover;
-    }
-
-    .option {
-        margin-left: 33px;
-    }
-
-    #next-btn {
-        margin-left: 185px;
     }
 
     #restart-btn {
