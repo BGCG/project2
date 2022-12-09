@@ -60,7 +60,7 @@ h2 {
 
 button {
     position: relative;
-    display: block; 
+    display: block;
     margin: 0 auto;
     padding: 10px;
     height: 50px;
@@ -102,7 +102,8 @@ button {
 }
 
 .option {
-    left: -5px;;
+    left: -5px;
+    ;
 }
 
 #next-btn {
@@ -159,23 +160,23 @@ button:hover {
 /* Media queries for screen sizes max-width 500px  */
 
 @media (max-width: 500px) {
- 
-     #next-btn {
+
+    #next-btn {
         margin-left: 30px;
-    } 
+    }
 
 }
 
 
 @media (max-width: 608px) {
- 
-    #question-container-main {
-       width: 280px;
-   } 
 
-   #next-btn {
-    margin-left: 50px;
-} 
+    #question-container-main {
+        width: 280px;
+    }
+
+    #next-btn {
+        margin-left: 50px;
+    }
 
 
 }

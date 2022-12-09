@@ -175,7 +175,7 @@ function showQuestion() {
     questionBox.classList.remove('hide');
 
     questionText.innerText = questions[currentQuestionIndex].question;
-// Lines 179 to 184 are inspired by the teachings of Zenva - https://www.youtube.com/watch?v=RswgVWKJRLM
+    // Lines 179 to 184 are inspired by the teachings of Zenva - https://www.youtube.com/watch?v=RswgVWKJRLM
     optionsBtn.forEach(function (element, index) {
 
         element.textContent = questions[currentQuestionIndex].options[index];
@@ -227,7 +227,7 @@ nextButton.addEventListener('click', function () {
     } else {
         alert('Please select an option!');
     }
-    
+
     resetButton();
 });
 
