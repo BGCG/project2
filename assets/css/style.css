@@ -131,7 +131,7 @@ button:hover {
     padding: 5px;
 }
 
-/* Disable buttons - writing of this code was helped by the teachings of W3 Schools and MDN docs (see credits) */
+/* Disable buttons - writing of this code was helped by the teachings of W3 Schools and MDN docs (see credits in README) */
 
 .option:disabled {
     color: black;
