@@ -89,8 +89,15 @@ When diabling buttons after a click event, I had some difficulties determining h
 
 * Passed through HTML validator and no errors were found
 * Passed through CSS validator and no errors were found
-* Tested on Javascript JShint quality control tool 
+
+![screenshot-of-css-validator-results](assets/images/screenshots/css-validator-results.png)
+* Tested on Javascript JShint quality control tool with no errors found 
+
+![screenshot-of-jshint-qaulity-control](assets/images/screenshots/jshint-validator-results.png)
+
 * Generated a lighthouse report using Dev Tools which yielded an excellent accessibility score
+
+![screenshot-of-lighthouse-report-results](assets/images/screenshots/lighthouse-report-results.png)
 * Google Developer tools to test responsiveness of site and for fixing bugs in JS script
 * I confirm that the feedback alerted to the user is correct (i.e. question correct answers are accurate to the best of my knowledge)
 * I confirmed that this quiz looks good across multiple devices which I tested using Chrome Developer tools 
@@ -131,9 +138,14 @@ The site can be found [here](https://bgcg.github.io/project2/).
 
 ### Content ###
 
-When starting this project, I sought some inspiration on how to approach how to build an online quiz. I found the youtube video from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1172s) very informative on how to approach building an online quiz, however I took a different approach in a multiple areas.
+When starting this project, I sought some inspiration on how to approach how to build an online quiz. I found the youtube video from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1172s) very informative on how to approach building an online quiz, however I took a different approach in a multiple areas. The following points were the main learnings from this tutorial; 
+* Reminder of the Code Institute teachings on how to grab elements from the DOM 
+* Assignment of the question index to 0 and then iterating from there with index++ 
+* Hiding and unhiding elements using `element.classList.add('hide')` and adding a `.hide {display: none;}` in CSS
 
-My main areas of troubleshooting were the iteration through the options to make the correct options appear in the button elements. I found the [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post really helpful and the following [youtube video](https://www.youtube.com/watch?v=RswgVWKJRLM) iterate through options; which advised using the .forEach method of iterating through each element. 
+Note: although I used the above tutorial as a guideline how to approach scripting a quiz, I customised my code throughout and took a different approach to dispalying the options than Web Dev Simplified.
+
+My main areas of troubleshooting were the iteration through the options to make the correct options appear in the button elements. I found the [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post really helpful and the following [youtube video](https://www.youtube.com/watch?v=RswgVWKJRLM) iterate through options; which advised using the `.forEach` method of iterating through each element. 
 
 To select all my option buttons, I made use of the querySelectorAll selector; I found the [folkstalk](https://www.folkstalk.com/2022/09/event-listener-to-elements-with-class-with-code-examples.html) post helpful in learning how to use this selector.  
 

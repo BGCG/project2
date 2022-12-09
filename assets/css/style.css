@@ -7,7 +7,7 @@
     margin: 0;
 }
 
-/* Hide class to hide elements to be able to control visibility of elements in js */
+/* Hide class to hide elements to be able to control visibility of elements in js - inspired by Web Dev Simplified - https://www.youtube.com/watch?v=riDzcEQbX6k&t=1172s */
 
 .hide {
     display: none;
@@ -130,6 +130,8 @@ button:hover {
     width: 480px;
     padding: 5px;
 }
+
+/* Disable buttons - writing of this code was helped by the teachings of W3 Schools and MDN docs (see credits) */
 
 .option:disabled {
     color: black;
