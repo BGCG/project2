@@ -20,7 +20,7 @@ For users who want to test their History knowledge and learn more about historic
 
 * **New user goals:** To test their knowledge on history and have some fun with it.
 
-### Accessibility ###
+### Accessibility and Communication ###
 
 Dark text is overlayed on a white background or light text overlayed on dark background to enhance readability of the text. The image used for the background image for decorative purposes only.
 
@@ -46,34 +46,39 @@ I used the Alexandria font as the header and question elements as this gives a s
 
 ## Features ## 
 
-**Start button:**
+**Start button/Homepage:**
 
-The start button is clickable and takes you to the first question.
+* At the top left hand size of the screen there is the title of the quiz 'History buff quiz' to make the context of the quiz clear. 
+* On the starting screen there is a start button which is clickable and takes you to the first question.
 
 ![screenshot-of-start-button](assets/images/screenshots/home.png)
 
 **Question display:** 
 
-The question is displayed with four answer options, when the button is clicked it will alert the user whether their response was wrong/invalid. A description below the option buttons will display the right answer with a small explanation when an option is clicked. 
+* The question is displayed with four answer options, when the button is clicked it will alert the user whether their response was wrong/invalid. 
+* A description below the option buttons will display the right answer with a small explanation when an option is clicked. 
 
 ![screenshot-of-options](assets/images/screenshots/quiz-options.jpg)
 
 **Clickable interactivity:** 
 
-When the option buttons are clicked they will turn green and change text to 'Correct!' when the question is answered correctly or the button will turn red and display the text 'Wrong!' when the answer is incorrect. Once the user has selected one option, all the buttons become disabled so the user can't break the game. 
+* When the option buttons are clicked they will turn green and change text to 'Correct!' when the question is answered correctly or the button will turn red and display the text 'Wrong!' when the answer is incorrect. 
+* Once the user has selected one option, all the buttons become disabled so the user can't break the game. 
 
 ![screenshot-of-option-correct](assets/images/screenshots/quiz-options-correct.png)
 ![screenshot-of-option-incorrect](assets/images/screenshots/quiz-options-incorrect.png)
 
-**Next:**
+**Next button/alert:**
 
-The next button when clicked will display a new question with four options and the color of the buttons will be refreshed to white. If the user tries to click the next button without selecting an option then an alert will pop up informing them to select an option before moving on. 
+* The next button when clicked will display a new question with four options and the color of the buttons will be refreshed to white.
+* If the user tries to click the next button without selecting an option then an alert will pop up informing them to select an option before moving on. 
 
 ![screenshot-of-quiz-alert](assets/images/screenshots/quiz-alert.png)
 
-**Refresh:**
+**Restart button/score:**
 
-After 20 questions, a page will come up with a restart button so the user can restart the game if they wish - which will take them back to the start page. Additionally, the user will be told the number of questions they answered correctly out of the total question number. 
+* After 20 questions, a page will come up with a restart button so the user can restart the game if they wish - which will take them back to the start page. 
+* Additionally, the user will be told the number of questions they answered correctly out of the total question number. 
 
 ![screenshot-of-quiz-score](assets/images/screenshots/quiz-score.png)
 
