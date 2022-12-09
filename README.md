@@ -175,7 +175,7 @@ For my mentor for her feedback and tutor support at Code Institute for pointers 
 
 ## Historical facts references ##
 
-* I had to double check the [penicillin wikipedia article](https://en.wikipedia.org/wiki/Penicillin) as I forgot which species of fungus Penicillin was derived from. I also wanted to check different scientists who worked on Pencillin so I could provide some good alternative answers to the user.  
+* I had to double check the [Penicillin Wikipedia article](https://en.wikipedia.org/wiki/Penicillin) as I forgot which species of fungus Penicillin was derived from. I also wanted to check different scientists who worked on Pencillin so I could provide some good alternative answers to the user.  
 * The [Origin of Species Wikipedia](https://en.wikipedia.org/wiki/On_the_Origin_of_Species) article as I forgot the year which the book was published. 
 * I forgot the age of the pyramids so I checked the [National Geographic](https://www.nationalgeographic.com/history/article/giza-pyramids#:~:text=The%20Giza%20Pyramids%2C%20built%20to,constructed%20some%204%2C500%20years%20ago) article.
 * I needed to double check the capacity of the Circus maximus so I double checked the [rome.net](https://www.rome.net/circus-maximus#:~:text=The%20Circus%20Maximus%20in%20Rome,with%20space%20for%20300%2C000%20spectators) website for this.
