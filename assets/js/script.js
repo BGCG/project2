@@ -166,7 +166,7 @@ let questions =
 
     ];
 
-/** Show question from questions array and options. Function will also show explaination with a click event. 
+/** Show question from questions array and options. Hide start button. Function will also show explaination with a click event. 
  * Click event will also change color and text to provide feedback to user. Activate resetState function. 
  * Additionally, the option buttons will be disabled after one of the options is clicked on. */
 
