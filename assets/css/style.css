@@ -181,10 +181,9 @@ button:hover {
 /* Media queries for screen sizes max-width 345px */
 
 @media (max-width: 345px) {
-    
+
     #question-container-main {
         margin-left: -50px;
-
     }
 }
 
