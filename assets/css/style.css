@@ -170,7 +170,7 @@ button:hover {
 @media (max-width: 608px) {
 
     #question-container-main {
-        width: 280px;
+        width: 270px;
     }
 
     #next-btn {
