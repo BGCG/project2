@@ -1,7 +1,7 @@
-const startButton = document.getElementById('start-btn');
-const nextButton = document.getElementById('next-btn');
+const startBtn = document.getElementById('start-btn');
+const nextBtn = document.getElementById('next-btn');
 let questionBox = document.getElementById('question-container');
-const restartButton = document.getElementById('restart-game-div');
+const restartBtn = document.getElementById('restart-game-div');
 let questionText = document.getElementById('question-text');
 let explaination = document.getElementById('explaination');
 let scoreArea = document.getElementById('score-area');
@@ -171,7 +171,7 @@ let questions =
  * Additionally, the option buttons will be disabled after one of the options is clicked on. */
 
 function showQuestion() {
-    startButton.classList.add('hide');
+    startBtn.classList.add('hide');
     questionBox.classList.remove('hide');
 
     questionText.innerText = questions[currentQuestionIndex].question;
@@ -216,12 +216,12 @@ optionsBtn.forEach(function (element, index) {
 /** Show next button and iterate to next question in questions array. */
 
 function resetState() {
-    nextButton.classList.remove('hide');
+    nextBtn.classList.remove('hide');
 }
 
 // Activate resetButton and showNextQuestion function.
 
-nextButton.addEventListener('click', function () {
+nextBtn.addEventListener('click', function () {
     if (optionsBtn[0].disabled) {
         showNextQuestion();
     } else {
@@ -262,9 +262,9 @@ function showNextQuestion() {
 
 function restartGame() {
     questionBox.classList.add('hide');
-    nextButton.classList.add('hide');
-    restartButton.classList.remove('hide');
-    restartButton.addEventListener('click', function onclick() {
+    nextBtn.classList.add('hide');
+    restartBtn.classList.remove('hide');
+    restartBtn.addEventListener('click', function onclick() {
         window.location.reload();
     });
 }
