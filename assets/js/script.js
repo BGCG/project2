@@ -25,7 +25,7 @@ let questions =
             question: 'Who was believed to be the first European to travel to North America?',
             options: ['Christopher Columbus', 'James Cook', 'Leif Eriksson', 'Robert Livingston'],
             answer: 2,
-            answerExplaination: 'The Viking explorer, Leif Eriksson is believed to be the first European man to travel to North America.'
+            answerExplaination: 'The Viking explorer, Leif Eriksson, is believed to be the first European man to travel to North America.'
         },
 
         {
@@ -53,14 +53,14 @@ let questions =
             question: 'What Roman holiday was Julius Caesar killed on?',
             options: ['Christmas', 'The ides of March', 'Easter', 'Liberalia'],
             answer: 1,
-            answerExplaination: 'Julius Caesar was assassinated on the Roman holiday called the Ides of March. He was killed by his senators including one which he viewed as a son - Brutus - because he declared himself dictator for life.'
+            answerExplaination: 'Julius Caesar was assassinated on the Roman holiday called the Ides of March. He was killed by his senators including one which he viewed as a son - Brutus - because he had declared himself dictator for life.'
         },
 
         {
             question: 'Which country did the Romans never invade due to some fierce resistance and therefore turned back.',
             options: ['Germany', 'France', 'Scotland', 'England'],
             answer: 2,
-            answerExplaination: 'When the Romans tried to invade Scotland they were challenged by some fierce Scottish warriors and decided it would be best to turn back and invade somewhere else.'
+            answerExplaination: 'When the Romans tried to invade Scotland they were challenged by some Scottish tribes that were so fierce, the Romans instead decided to build a Wall along the border to keep the Scots out of England.'
         },
 
         {
@@ -72,7 +72,7 @@ let questions =
         },
 
         {
-            question: 'What was quote was famously attributed to Marie Antoinette?',
+            question: 'What quote was famously attributed to Marie Antoinette?',
             options: ['"Let them drink blood"', '"Let them eat mud"', '"Let them eat cake"', '"Let them eat soup"'],
             answer: 2,
             answerExplaination: 'Marie Antionete was famously quoted to say "Let them eat cake" when France was experiencing widespread famine. However, it has been disputed by Historians whether she actually said this or if it was simply a mistranslation.'
@@ -82,14 +82,14 @@ let questions =
             question: 'What year did the Battle of Hastings occur?',
             options: ['1540', '1155', '1066', '984'],
             answer: 2,
-            answerExplaination: 'The Battle of Hastings occuring in 1066 in, you guessed it, Hastings!'
+            answerExplaination: 'The Battle of Hastings took place in 1066 in, you guessed it, Hastings!'
         },
 
         {
             question: 'Who of the following did Cleopatra have a romantic relationship with?',
             options: ['Pompey', 'Brutus', 'Julius Caesar', 'Cicero'],
             answer: 2,
-            answerExplaination: 'Cleopatra had a romantic relationship with Julius Caesar, for which they had a child together.'
+            answerExplaination: 'Cleopatra had a romantic relationship with Julius Caesar, from which they had a child together.'
         },
 
         {
@@ -103,11 +103,11 @@ let questions =
             question: 'Why did Henry VIII create the Church of England?',
             options: ['To kill more people', 'To get a divorce', 'For a bet', 'Sunday drinking'],
             answer: 1,
-            answerExplaination: 'Henry VII wanted to divorce his wife so created the Church of England as divorce was forbidden by the Catholic Church. He then went on to marry multiple wifes.'
+            answerExplaination: 'Henry VII wanted to divorce his wife so created the Church of England as divorce was forbidden by the Catholic Church. He then went on to marry multiple wives.'
         },
 
         {
-            question: 'Who wrote the "Origin of species?"',
+            question: 'Who wrote the "Origin of species"?',
             options: ['Sigmund Freud', 'Mark Chapman', 'John Wilkes Booth', 'Charles Darwin'],
             answer: 3,
             answerExplaination: 'Charles Darwin wrote the Origin of Species in 1859 which expressed his theory of evolution via natural selection.'
@@ -124,7 +124,7 @@ let questions =
             question: 'What was the Circus Maximus used for in Rome?',
             options: ['A park', 'A market place', 'Gladiator fights', 'Chariot racing'],
             answer: 3,
-            answerExplaination: 'The Circus Maximus was used for Chariot racing. Fun fact it held around 300,000 people which is larger than most stadiums today.'
+            answerExplaination: 'The Circus Maximus was used for Chariot racing. It held around 300,000 people which is larger than most stadiums today.'
         },
 
         {
@@ -146,11 +146,11 @@ let questions =
             question: 'What year was the first moon landing?',
             options: ['1960', '1959', '1955', '1969'],
             answer: 3,
-            answerExplaination: 'Three astronauts went to the moon in 1969 in the Apollo 11 - with Neil Armstrong and Buzz Aldrin being the first men to step on the surface of the moon. Fun fact - Apollo 11 had the same amount of computing power as a modern day calculator.'
+            answerExplaination: 'Three astronauts went to the moon in 1969 in Apollo 11 - with Neil Armstrong and Buzz Aldrin being the first men to step on the surface of the moon. Fun fact - Apollo 11 had the same amount of computing power as a modern day calculator.'
         },
 
         {
-            question: 'Which country had the first man in space?',
+            question: 'Which country put the first man in space?',
             options: ['US', 'China', 'USSR', 'India'],
             answer: 2,
             answerExplaination: 'USSR sent Yuri Gagarin to space in 1961.'
