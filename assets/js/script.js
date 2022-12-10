@@ -265,6 +265,7 @@ function restartGame() {
     nextBtn.classList.add('hide');
     restartBtn.classList.remove('hide');
     restartBtn.addEventListener('click', function onclick() {
+        // the writing of the code below was helped by the following resource - https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click
         window.location.reload();
     });
 }

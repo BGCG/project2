@@ -46,7 +46,7 @@ The quiz has a background of ruins of a castle to represent the subject of the q
 ### Typography ###
 
 Laila font was used for the options, next, start and restart buttons as it has an appearance reminiscent of old scripts of historical texts. 
-I used the Alexandria font as the header and question elements as this gives a slight contrast with Laila, emphasising this is a light-hearted quiz, although perhaps about serious subjects in history. 
+I used the Alexandria font as the header and question elements as this gives a slight contrast with Laila, emphasising this is a light-hearted quiz, although about serious subjects in history. 
 
 ## Features ## 
 
