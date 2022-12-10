@@ -88,7 +88,7 @@ I used the Alexandria font as the header and question elements as this gives a s
 
 The main areas that required the most troubleshooting and optimisation in this project was constructing the loops to iterate through each question. I included `console.log` in the showNextQuestion() function which reported how many loops had been executed, where I found that when moving to the next question, there were three loops. I struggled to determine the root cause of this issue, thinking it could be due to iterations through the options which could be increasing the amount of loops when moving to a next question. I gained some clarification when I contacted tutor support who advised me that I had an event listener for the next button present inside the `resetButton()` function that was causing this excessive looping who advised me to move the event listener outside the function which resolved this issue.
 
-Additionally, I had an issue with the disabling the buttons so that the user couldn't just click multiple times on the buttons to either increase the score or select another button to find the right answer. I consulted some MDN and W3 schools documentation as described in the credits section of this README about the `:disable` pseudo-class and how to implement this in the JS script. However, I found when I wrote `optionsBtn.disabled = true` it was only working for the button that was clicked on. I was trying to solve this for a few hours and only coming to the rather simple conclusion that I needed to specify the index of the button I would like to disable - which was all of them. Therefore I specified all the indexes of the buttons in seperate lines of code. Although somewhat repetitive, it did the trick. In relation to disabling the buttons, I wanted to create an alert if the user tried to press the next button. To my knowledge, it's not possible to put a 'click' in a conditional if statement, so instead I used the button disabled condition as this event happens directly after the click event. I just used `optionsBtn[0].disable` as the conditional - as I only needed to target one of the buttons being disabled as the code above would disable all the buttons anyway. 
+Additionally, I had an issue with the disabling the buttons so that the user couldn't just click multiple times on the buttons to either increase the score or select another button to find the right answer. I consulted some MDN and W3 schools documentation as described in the credits section of this README about the `:disable` pseudo-class and how to implement this in the JS script. However, I found when I wrote `optionsBtn.disabled = true` it was only working for the button that was clicked on. I was trying to solve this for a few hours and only coming to the rather simple conclusion that I needed to specify the index of the button I would like to disable - which was all of them. Therefore I specified all the indexes of the buttons in seperate lines of code. Although somewhat repetitive, it resolved the issue. In relation to disabling the buttons, I wanted to create an alert if the user tried to press the next button. To my knowledge, it's not possible to put a 'click' in a conditional if statement, so instead I used the button disabled condition as this event happens directly after the click event. I just used `optionsBtn[0].disable` as the conditional - as I only needed to target one of the buttons being disabled as the code above would disable all the buttons anyway. 
 
 ### Key testing points ###
 
@@ -106,11 +106,10 @@ Additionally, I had an issue with the disabling the buttons so that the user cou
 
 ![screenshot-of-lighthouse-report-results](assets/images/screenshots/lighthouse-report-results.png)
 * Google Developer tools to test responsiveness of site and for fixing bugs in JS script
-* I confirm that the feedback alerted to the user is correct (i.e. question correct answers are accurate to the best of my knowledge)
+* I confirm that the feedback alerted to the user is correct (i.e. question correct answers are factually accurate to the best of my knowledge)
 * I confirm the score calculated after each game play is accurate
 * I confirmed that this quiz looks good across multiple devices which I tested using Chrome Developer tools 
 * I have confirmed compatibility of the quiz with Google Chrome, Microscoft Edge and Firefox browsers. I have tested on safari browser on an iPhone as I don't own a Mac. 
-
 
 ## Debugging ##
 
@@ -147,12 +146,13 @@ The site can be found [here](https://bgcg.github.io/project2/).
 
 ### Content ###
 
-When starting this project, I sought some inspiration on how to approach how to build an online quiz. I found the youtube video from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1172s) very informative on how to approach building an online quiz, however I took a different approach in a multiple areas. The following points were the main learnings from this tutorial; 
+When starting this project, I sought some inspiration on how to approach building an online quiz. I found the youtube video from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1172s) very informative, however I took a different approach in multiple areas. The following points were the main learnings from this tutorial; 
 * Reminder of the Code Institute teachings on how to grab elements from the DOM 
 * Assignment of the question index to 0 and then iterating from there with index++ 
 * Hiding and unhiding elements using `element.classList.add('hide')` and adding a `.hide {display: none;}` in CSS
+* The idea to have control buttons and buttons to display options - but I customised these to suit my own project needs. 
 
-Note: although I used the above tutorial as a guideline how to approach scripting a quiz, I customised my code throughout such as I took a different approach to displaying the options than Web Dev Simplified.
+Note: although I used the above tutorial as a guideline how to approach scripting a quiz, I customised my code throughout such as I took a different approach to displaying the options than Web Dev Simplified, used the current question variable as a global variable rather than a local variable, the manner in which I started and restarted the game and how I destinguished between a correct answer from a wrong answer in my conditional statements. Additionally, I employed additional features not employed in the tutorial such as the alert to stop the user going to the next question without selecting an answer, a score counting and display feature, an appearing explaination to each of the answers after a user selects an answer and the disable buttons feature after a user has clicked on the answer so the user can't break the game. 
 
 My main areas of troubleshooting were the iteration through the options to make the correct options appear in the button elements. I found the [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post really helpful and the following youtube video by [Zenva](https://www.youtube.com/watch?v=RswgVWKJRLM) iterate through options; which advised using the `.forEach` method of iterating through each element. 
 
@@ -181,7 +181,7 @@ For my mentor for her feedback and tutor support at Code Institute for pointers 
 * I forgot the age of the pyramids so I checked the [National Geographic](https://www.nationalgeographic.com/history/article/giza-pyramids#:~:text=The%20Giza%20Pyramids%2C%20built%20to,constructed%20some%204%2C500%20years%20ago) article.
 * I needed to double check the capacity of the Circus maximus so I double checked the [rome.net](https://www.rome.net/circus-maximus#:~:text=The%20Circus%20Maximus%20in%20Rome,with%20space%20for%20300%2C000%20spectators) website for this.
 * I forgot the name of the first man in space so I checked the following [Wikipedia](https://en.wikipedia.org/wiki/Yuri_Gagarin) article. 
-* To double checked the name of the Viking explorer who is believed to be the first European to travel to North America by checking the following [article]( https://www.npr.org/2007/10/08/15040888/coming-to-america-who-was-first#:~:text=We%20know%20now%20that%20Columbus,America%20and%20established%20a%20settlement.).
+* To double check the name of the Viking explorer who is believed to be the first European to travel to North America by checking the following [article]( https://www.npr.org/2007/10/08/15040888/coming-to-america-who-was-first#:~:text=We%20know%20now%20that%20Columbus,America%20and%20established%20a%20settlement.).
 
 
 

@@ -29,7 +29,7 @@ let questions =
         },
 
         {
-            question: 'In Scottish history what was the name of Braveheart?',
+            question: 'In Scottish history, what was the name of Braveheart?',
             options: ['Robert Burns', 'William Wallace', 'Benjamin Bland', 'Robert the Bruce'],
             answer: 1,
             answerExplaination: 'Braveheart was named William Wallace. He was famously hung, drawn and quartered by the English and his statue is outside Edinburgh Castle.'
@@ -43,10 +43,10 @@ let questions =
         },
 
         {
-            question: 'Who was the British prime minister which served during World War 2?',
+            question: 'Which British Prime Minister served during World War 2?',
             options: ['John Major', 'Clement Attlee', 'Winston Churchill', 'David LLoyd George'],
             answer: 2,
-            answerExplaination: 'Winston Churchill served as British prime minister from 1940-1945'
+            answerExplaination: 'Winston Churchill served as British prime minister from 1940-1945.'
         },
 
         {
@@ -110,7 +110,7 @@ let questions =
             question: 'Who wrote the "Origin of species?"',
             options: ['Sigmund Freud', 'Mark Chapman', 'John Wilkes Booth', 'Charles Darwin'],
             answer: 3,
-            answerExplaination: 'Charles Darwin wrote the Origin of Species in 1859 which expressed his theory on evolution of species via natural selection.'
+            answerExplaination: 'Charles Darwin wrote the Origin of Species in 1859 which expressed his theory of evolution via natural selection.'
         },
 
         {
@@ -135,7 +135,7 @@ let questions =
         },
 
         {
-            question: 'The Egyptians mummified which animal which they considered to be sacred?',
+            question: 'The Egyptians mummified which animal that they considered to be sacred?',
             options: ['Dogs', 'Mice', 'Cats', 'Horses'],
             answer: 2,
             answerExplaination: 'Egyptians considered cats sacred and there is evidence that cats were mummified with their owners.'
@@ -146,7 +146,7 @@ let questions =
             question: 'What year was the first moon landing?',
             options: ['1960', '1959', '1955', '1969'],
             answer: 3,
-            answerExplaination: 'Three astronauts went to the moon in 1969 in the Apollo 11 - with Neil Armstrong and Buzz Aldrin being the first men to step on the moon"s surface. Fun fact - Apollo 11 had the same amount of computing power as a modern day calculator.'
+            answerExplaination: 'Three astronauts went to the moon in 1969 in the Apollo 11 - with Neil Armstrong and Buzz Aldrin being the first men to step on the surface of the moon. Fun fact - Apollo 11 had the same amount of computing power as a modern day calculator.'
         },
 
         {
