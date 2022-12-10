@@ -52,7 +52,7 @@ I used the Alexandria font as the header and question elements as this gives a s
 
 **Start button/Homepage:**
 
-* At the top left hand size of the screen there is the title of the quiz 'History buff quiz' to make the context of the quiz clear. 
+* At the top left hand side of the screen there is the title of the quiz 'History buff quiz' to make the context of the quiz clear. 
 * On the starting screen there is a start button which is clickable and takes you to the first question.
 
 ![screenshot-of-start-button](assets/images/screenshots/home.png)
