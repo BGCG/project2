@@ -167,7 +167,6 @@ button:hover {
 
 }
 
-
 @media (max-width: 608px) {
 
     #question-container-main {
@@ -190,12 +189,10 @@ button:hover {
         margin-left: -50px;
     }
 
-
     h1 {
         text-align: left;
 
     }
-
 
     h2 {
         margin-right: 25px;
