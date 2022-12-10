@@ -166,17 +166,6 @@ button:hover {
 
 }
 
-
-/* Media queries for screen sizes max-width 500px  */
-
-@media (max-width: 500px) {
-
-    #next-btn {
-        margin-left: 30px;
-    }
-
-}
-
 /* Media queries for screen sizes max-width 360px */
 
 @media (max-width: 360px) {
@@ -195,9 +184,9 @@ button:hover {
 @media (max-width: 345px) {
     #question-container-main {
         margin-left: -50px;
-       
+
     }
-} 
+}
 
 /* Media queries for screen sizes min-width 200px */
 
