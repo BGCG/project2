@@ -59,7 +59,7 @@ I used the Alexandria font as the header and question elements as this gives a s
 
 **Question display:** 
 
-* The question is displayed with four answer options, when the button is clicked it will alert the user whether their response was wrong/invalid. 
+* The question is displayed with four answer options, when the button is clicked it will alert the user whether their response was correct or wrong/invalid. 
 * A description below the option buttons will display the right answer with a small explanation when an option is clicked. 
 
 ![screenshot-of-options](assets/images/screenshots/quiz-options.png)
