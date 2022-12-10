@@ -117,7 +117,7 @@ Additionally, I had an issue with the disabling the buttons so that the user cou
 
 ## Debugging ##
 
-My quiz background image wasn't appearing initially - I found removal of the initial '/' in the path in the `url()` in the background image selector in the css code solved this issue. Further troubleshooting of bugs will be discussed in the 'troubleshooting and optimisation' section in the testing section. 
+My quiz background image wasn't appearing initially - I found removal of the initial '/' in the path in the `url()` in the background image selector in the CSS code solved this issue. Further troubleshooting of bugs will be discussed in the 'troubleshooting and optimisation' section in the testing section. 
 
 ## Deployment ##
 
@@ -139,7 +139,7 @@ The site can be found [here](https://bgcg.github.io/project2/).
 
 * Google fonts for fonts Laila and Alexandria 
 * Am I responsive for the screenshots in the introduction to this README
-* Jshint Javascript validator 
+* JShint Javascript validator 
 * Jigsaw CSS validator 
 * W3C HTML validator
 * The web hosting service GitHub was used to deploy this site
@@ -156,7 +156,7 @@ When starting this project, I sought some inspiration on how to approach buildin
 * Hiding and unhiding elements using `element.classList.add('hide')` (I have used this property on multiple locations in the JS code) and adding a `.hide {display: none;}` in CSS
 * The idea to have control buttons and buttons to display options - but I customised these to suit my own project needs. 
 
-Note: although I used the above tutorial as a guideline how to approach scripting a quiz, I customised my code throughout and I took a different approach to displaying the options than Web Dev Simplified, used the current question variable as a global variable rather than a local variable, the manner in which I started and restarted the game and how I distinguished between a correct answer from a wrong answer in my conditional statements. Additionally, I employed additional features not employed in the tutorial such as the alert to stop the user going to the next question without selecting an answer, a score counting and display feature, an appearing explanation to each of the answers after a user selects an answer and the disable buttons feature after a user has clicked on the answer so the user can't break the game. 
+Note: although I used the above tutorial as a guideline how to approach scripting a quiz, I customised my code throughout such as I used the current question variable as a global variable rather than a local variable, the manner in which I started and restarted the game and how I distinguished between a correct answer from a wrong answer in my conditional statements. Additionally, I employed additional features not employed in the tutorial such as the alert to stop the user going to the next question without selecting an answer, a score counting and display feature, an appearing explanation to each of the answers after a user selects an answer and the disable buttons feature after a user has clicked on the answer so the user can't break the game. 
 
 My main areas of troubleshooting were the iteration through the options to make the correct options appear in the button elements. I found the [stack overflow](https://stackoverflow.com/questions/23177484/how-to-loop-through-questions) post really helpful and the following youtube video by [Zenva](https://www.youtube.com/watch?v=RswgVWKJRLM) iterate through options; which advised using the `.forEach` method of iterating through each element. 
 
@@ -185,7 +185,7 @@ For my mentor for her feedback and tutor support at Code Institute for pointers 
 * I forgot the age of the pyramids so I checked the [National Geographic](https://www.nationalgeographic.com/history/article/giza-pyramids#:~:text=The%20Giza%20Pyramids%2C%20built%20to,constructed%20some%204%2C500%20years%20ago) article.
 * I needed to double check the capacity of the Circus maximus so I double checked the [rome.net](https://www.rome.net/circus-maximus#:~:text=The%20Circus%20Maximus%20in%20Rome,with%20space%20for%20300%2C000%20spectators) website for this.
 * I forgot the name of the first man in space so I checked the following [Wikipedia](https://en.wikipedia.org/wiki/Yuri_Gagarin) article. 
-* To double check the name of the Viking explorer who is believed to be the first European to travel to North America by checking the following [article]( https://www.npr.org/2007/10/08/15040888/coming-to-america-who-was-first#:~:text=We%20know%20now%20that%20Columbus,America%20and%20established%20a%20settlement.).
+* To double check the name of the Viking explorer who is believed to be the first European to travel to North America, I checked this [article]( https://www.npr.org/2007/10/08/15040888/coming-to-america-who-was-first#:~:text=We%20know%20now%20that%20Columbus,America%20and%20established%20a%20settlement.).
 
 
 
