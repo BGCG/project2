@@ -23,7 +23,8 @@
     justify-content: center;
 }
 
-/* Styling of body  */
+/* Styling of body - text-align center of body inspired from -
+https://stackoverflow.com/questions/953918/how-to-align-a-div-to-the-middle-horizontally-width-of-the-page */
 
 body {
     color: white;
@@ -73,7 +74,8 @@ button {
     border: 2px gray solid;
 }
 
-/* Styling and positioning of question container */
+/* Styling and positioning of question container - usage of align items and justify content with display 
+flex inspired from https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Center_an_element */
 
 #question-container-main {
     background-color: #3e403f;
@@ -157,19 +159,9 @@ button:hover {
     }
 }
 
-/* Media queries for screen sizes max-width 500px  */
+/* Media queries for screen sizes max-width 715px  */
 
-@media (max-width: 500px) {
-
-    #next-btn {
-        margin-left: 30px;
-    }
-
-}
-
-/* Media queries for screen sizes max-width 608px  */
-
-@media (max-width: 608px) {
+@media (max-width: 715px) {
 
     #question-container-main {
         width: 270px;
@@ -177,6 +169,17 @@ button:hover {
 
     #next-btn {
         margin-left: 50px;
+    }
+
+}
+
+
+/* Media queries for screen sizes max-width 500px  */
+
+@media (max-width: 500px) {
+
+    #next-btn {
+        margin-left: 30px;
     }
 
 }
@@ -203,7 +206,6 @@ button:hover {
 
     #question-container-main {
         padding: 5px;
-      
     }
 
     h1 {

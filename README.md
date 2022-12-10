@@ -164,7 +164,7 @@ When the quiz ended I wanted the page to refresh when the user pressed the 'Rest
 
 Initially, the user could select multiple answers which means the user could break the game. Therefore, I implemented a disable CSS pseudo-class, in which I found the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled) helpful in describing how this works. Additionally, I found the [W3 Schools](https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp) page useful in informing me how this would be used in the JS script to disable the buttons. 
 
-For the CSS styling, I was having issues with centering my question container on the page - I found the reply from avdgaag in this [stack overflow](https://stackoverflow.com/questions/953918/how-to-align-a-div-to-the-middle-horizontally-width-of-the-page) post helpful in achieving this who suggests to `text-align: center;` your body element to ease positioning of other elements on the page. 
+For the CSS styling, I was having issues with centering my question container on the page - I found the reply from avdgaag in this [stack overflow](https://stackoverflow.com/questions/953918/how-to-align-a-div-to-the-middle-horizontally-width-of-the-page) post helpful in achieving this who suggests to `text-align: center;` your body element to ease positioning of other elements on the page. Additionally, I found the [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Center_an_element) page on how to centre an element useful in centering the question container - in particular the usage of `display: flex` with `align-items:center` and `justify-contents:center`.
 
 ### Images ### 
 
