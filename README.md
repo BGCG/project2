@@ -109,6 +109,7 @@ Additionally, I had an issue with the disabling the buttons so that the user cou
 * I confirm that the feedback alerted to the user is correct (i.e. question correct answers are accurate to the best of my knowledge)
 * I confirm the score calculated after each game play is accurate
 * I confirmed that this quiz looks good across multiple devices which I tested using Chrome Developer tools 
+* I have confirmed compatibility of the quiz with Google Chrome, Microscoft Edge and Firefox browsers. I have tested on safari browser on an iPhone as I don't own a Mac. 
 
 
 ## Debugging ##
