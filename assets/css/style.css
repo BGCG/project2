@@ -53,7 +53,7 @@ h1 {
 h2 {
     font-family: Alexandria, Helvetica, sans-serif;
     font-size: 18px;
-    padding-bottom: 10px;
+    padding: 10px;
     text-align: left;
 }
 
@@ -84,9 +84,9 @@ flex inspired from https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookb
     align-items: center;
     opacity: 0.95;
     width: 600px;
-    height: 500px;
+    height: 450px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     margin: 0 auto;
     position: relative;
     display: inline-block;
@@ -100,7 +100,7 @@ flex inspired from https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookb
     margin: 0 auto;
     font-size: 27px;
     border-radius: 20px;
-    top: 160px;
+    top: 170px;
     color: black;
 }
 
@@ -133,6 +133,7 @@ button:hover {
 #explaination {
     width: 480px;
     padding: 5px;
+    margin-left: 10px;
 }
 
 /* Disable buttons - writing of this code was helped by the teachings of W3 Schools and MDN docs (see credits in README) */
@@ -145,15 +146,6 @@ button:hover {
 
 @media (max-width: 900px) {
 
-    #question-container-main {
-        height: 600px;
-
-    }
-
-    #start-btn {
-        margin-top: 100px;
-    }
-
     #explaination {
         width: auto;
     }
@@ -165,6 +157,7 @@ button:hover {
 
     #question-container-main {
         width: 270px;
+        height: 600px;
     }
 
     #next-btn {
@@ -190,15 +183,21 @@ button:hover {
     #question-container-main {
         margin-left: -10px;
     }
+
+    #next-btn {
+        margin-left: 70px;
+    }
 }
+
 
 /* Media queries for screen sizes max-width 345px */
 
 @media (max-width: 345px) {
     #question-container-main {
         margin-left: -50px;
+       
     }
-}
+} 
 
 /* Media queries for screen sizes min-width 200px */
 
