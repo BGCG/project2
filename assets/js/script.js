@@ -64,8 +64,8 @@ let questions =
         },
 
         {
-            question: 'Which Russian leader famously photoshopped himself with another Russian leader?',
-            options: ['Lenin', 'Stalin', 'Prince James', 'Prince Albert'],
+            question: 'Which Soviet leader famously photoshopped himself with another Soviet leader?',
+            options: ['Lenin', 'Stalin', 'Boris Yeltsin', 'Nikita Khrushchev'],
             answer: 1,
             answerExplaination: 'Stalin famously photoshopped himself with Lenin to give the false impression of companionship between them.'
 
@@ -73,9 +73,9 @@ let questions =
 
         {
             question: 'What was quote was famously attributed to Marie Antoinette?',
-            options: ['"Let them drink blood"', '"Let them eat mud"', '"Let them eat cake"', '"Let them eat bread"'],
+            options: ['"Let them drink blood"', '"Let them eat mud"', '"Let them eat cake"', '"Let them eat soup"'],
             answer: 2,
-            answerExplaination: 'Marie Antionete was famously quoted to say "Let them eat cake" when France was experiencing an economic downturn and widespread poverty. However, it has been disputed by Historians whether this is what she actually said or if it was a mistranslation.'
+            answerExplaination: 'Marie Antionete was famously quoted to say "Let them eat cake" when France was experiencing widespread famine. However, it has been disputed by Historians whether she actually said this or if it was simply a mistranslation.'
         },
 
         {
