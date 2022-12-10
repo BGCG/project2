@@ -7,7 +7,7 @@ let explaination = document.getElementById('explaination');
 let scoreArea = document.getElementById('score-area');
 let optionsBtn = document.querySelectorAll('.option');
 
-// Assignment of currentQuestionIndex 
+// Assignment of currentQuestionIndex - inspired by Web Dev Simplified - https://www.youtube.com/watch?v=riDzcEQbX6k&t=1172s
 
 let currentQuestionIndex = 0;
 
@@ -246,7 +246,7 @@ function resetButton() {
 /** Conditional deciding to startGame if iterations are below questions array length or else activate restartGame function */
 
 function showNextQuestion() {
-
+// currentQuestionIndex++ code inspired by Web Dev Simplified - https://www.youtube.com/watch?v=riDzcEQbX6k&t=1172s
     currentQuestionIndex++;
 
     if (currentQuestionIndex < questions.length) {
